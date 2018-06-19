@@ -4,7 +4,7 @@
 
 ## Usage instructions
 
-### First-time setup
+### First-time setup for Collaborators
 
 1. Make a [GitHub](https://github.com/) account
 1. Get added as a collaborator to this repository
