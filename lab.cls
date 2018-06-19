@@ -55,7 +55,7 @@
 }
 
 \newcommand{\AdvancedLabSyllabus}{http://experimentationlab.berkeley.edu/syllabus}
-\newcommand{\MailDonOrlando}{mailto:phylabs@berkeley.edu}
+\newcommand{\MailDonOrlando}{mailto:winthrop@berkeley.edu}
 \newcommand{\ErrorAnalysisVideo}{https://www.youtube.com/watch?v=jR54387Wd6c}
 \newcommand{\ErrorAnalysisNotes}{http://experimentationlab.berkeley.edu/EAX}
 \newcommand{\ExperimentEvaluation}{http://experimentationlab.berkeley.edu/StudentEvaluation}
