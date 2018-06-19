@@ -55,9 +55,13 @@
 }
 
 \newcommand{\AdvancedLabSyllabus}{http://experimentationlab.berkeley.edu/syllabus}
-\newcommand{\MailDonOrlando}{mailto:winthrop@berkeley.edu}
+%\newcommand{\MailDonOrlando}{mailto:winthrop@berkeley.edu}
+\newcommand{\Feedback}{Submit feedback using \href{http://experimentationlab.berkeley.edu/StudentEvaluation}{\textbf{this form.}}}
 \newcommand{\ErrorAnalysisVideo}{https://www.youtube.com/watch?v=jR54387Wd6c}
 \newcommand{\ErrorAnalysisNotes}{http://experimentationlab.berkeley.edu/EAX}
 \newcommand{\ExperimentEvaluation}{http://experimentationlab.berkeley.edu/StudentEvaluation}
 \newcommand{\LabReprints}{http://physics111.lib.berkeley.edu/Physics111/}
 \newcommand{\ExpReprints}{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/\@labacronym/\@labacronym\_index.html}{\textbf{\@labacronym}\textbf{ Reprints}}}
+\newcommand{\EmailComments}{Comments: Contact Winthrop Williams at winthrop@berkeley.edu with subject line "Comments".}
+\newcommand{\LabEngineer}{Winthrop Williams}
+\newcommand{\MailWinthropWilliams}{mailto:winthrop@berkeley.edu}

@@ -43,7 +43,8 @@
     \vspace{1.5em}
 }
 \newcommand{\AdvancedLabSyllabus}{http://experimentationlab.berkeley.edu/syllabus}
-\newcommand{\MailDonOrlando}{mailto:phylabs@berkeley.edu}
+%\newcommand{\MailDonOrlando}{mailto:phylabs@berkeley.edu}
+\newcommand{\Feedback}{Submit feedback using \href{http://experimentationlab.berkeley.edu/StudentEvaluation}{\textbf{this form.}}}
 \newcommand{\ErrorAnalysisVideo}{https://www.youtube.com/watch?v=jR54387Wd6c}
 \newcommand{\ErrorAnalysisNotes}{http://experimentationlab.berkeley.edu/EAX}
 \newcommand{\ExperimentEvaluation}{http://experimentationlab.berkeley.edu/StudentEvaluation}
@@ -118,4 +119,5 @@ Completed before proceeding with Experiment X? (Circle one)  Yes / No
 Staff Signature $\rule{8cm}{0.15mm}$ 
 \\[12pt]
 }
-
+\newcommand{\LabEngineer}{Winthrop Williams}
+\newcommand{\MailWinthropWilliams}{mailto:winthrop@berkeley.edu}
