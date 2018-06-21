@@ -63,5 +63,5 @@
 \newcommand{\LabReprints}{http://physics111.lib.berkeley.edu/Physics111/}
 \newcommand{\ExpReprints}{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/\@labacronym/\@labacronym\_index.html}{\textbf{\@labacronym}\textbf{ Reprints}}}
 \newcommand{\EmailComments}{Comments: Contact Winthrop Williams at winthrop@berkeley.edu with subject line "Comments".}
-\newcommand{\LabEngineer}{Winthrop Williams}
+\newcommand{\LabEngineer}{Winthrop Williams }
 \newcommand{\MailWinthropWilliams}{mailto:winthrop@berkeley.edu}
