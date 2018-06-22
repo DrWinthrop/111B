@@ -290,7 +290,7 @@ The trapping laser has a power output of up to 300 mW and a wavelength of 975nm,
 
     \item Check for stray beams: Every day, the first time you turn on the trapping laser you should perform a survey of the beam around the objective to check if there are any stray beams (diffuse or specular) coming from any part of the laser or optics, and then document this in the Laser Log Book in wall pocket.
 
-    \item The survey is done by using the IR Viewer, if it is not in the room find a staff member to locate it. The IR viewer is blue and you use it with your goggles on. The laser beam is invisible and very powerful; the IR viewer allows you to see it, but even if you can't see it you can still be blinded.
+    \item The survey is done by using the IR Viewer. If it is not in the room find a staff member to locate it. The IR viewer is blue and you use it with your goggles on. The laser beam is invisible and very powerful; the IR viewer allows you to see it, but even if you can't see it you can still be blinded.
 
     \item When the laser is at its maximum power, with LD I set to 490.00 mA, the power output about an inch from the stage is .4 mW and drops off with distance $r$ away from the stage like $1/r^2$. This is not powerful enough to cause damage to your eyes, especially if you are seated in your chair and not leaning in toward the equipment. However, within the optical path the laser emits about 238 to 300 mW of power, so make sure that you do not touch/adjust/insert any elements in the optical path which could diffract the beam. After you have checked for stray beams and when you are not adding oil or moving the slide, you do not need to wear the laser safety glasses.
 
@@ -316,7 +316,7 @@ This is an inverted compound microscope, so it may be backwards from what you ha
 
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/400px-Graphic1.jpg}{\includegraphics[width=0.5\linewidth]{images/400px-Graphic1.jpg}}
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/opticalPath.png}{\includegraphics[width=0.5\linewidth]{images/opticalPath.png}}
     \caption{The optical path. Illustrated with the emission filter in. Dotted green line represents emitted fluorescence.}
     \label{fig:400px-Graphic1}
 \end{figure}
@@ -419,7 +419,7 @@ Pipettors are a standard tool in most biology, biophysics, and chemistry labs, b
 
 \subsection{Preparing a Slide}
 
-For the calibration section of the lab, you'll be trapping synthetic silica microspheres, or beads, available as stock solutions in the refrigerator (a small bottle with blue solution, it is made by Bangs Laboratories, Inc. and says ``Uniform Dyed Microspheres'' on the label and ``Bead Solution'' on the lid). Be careful not to contaminate or spill the stock solutions, as they cost more than \$100 each. Whether using beads or bacteria, it is generally necessary to dilute the stock considerably to reduce the concentration of particles. You want particles to be somewhat scarce on the slide so that when you do trap one, you don't have other nearby particles being sucked into the trap and ruining your measurements.
+For the calibration section of the lab, you'll be trapping synthetic silica microspheres, or beads, available as stock solutions in the refrigerator (a small bottle with solution, it is made by Bangs Laboratories, Inc. and says ``Uniform Dyed Microspheres'' on the label and ``Bead Solution'' on the lid). Be careful not to contaminate or spill the stock solutions, as they cost more than \$100 each. Whether using beads or bacteria, it is generally necessary to dilute the stock considerably to reduce the concentration of particles. You want particles to be somewhat scarce on the slide so that when you do trap one, you don't have other nearby particles being sucked into the trap and ruining your measurements.
 
 Starting with the 1 micron uncoated silica bead stock, make a 1:10,000 serial dilution with distilled water using the 5 mL plastic tubes. A 1:10,000 dilution of 1 micron beads is 1 part concentrated bead solution out of 10,000 parts by volume of final bead water solution.
 
@@ -519,10 +519,10 @@ After doing this, the red LED indicators at the top of the joystick should alter
 
     \item With the trapping laser on and the emission filter off (in the run wheel), move the objective up and down to find the reflection of the laser on the coverslip and slide (i.e. you will see two spots as you move the micrometer knob up and down, one is from the reflection of the laser off of the coverslip, and the other is off of the slide). The slide reflection is much more symmetric. Focus again on the coverslip, and search for beads floating above it. Keep track of the position of the objective relative to the coverslip. The lens should never be so low that immersion oil fails to fill the gap, nor so high that it pushes the slide up off the stage. If beads are scarce, you may need to move the stage horizontally with the joystick to find some.
 
-    \begin{enumerate}
-        \item As you adjust the objective lens with the micrometer positioning knob, you will see the laser beam focus on the camera viewer at two different heights of the objective lens. You will be able to view the beads being trapped when the objective lens is positioned near these two heights. The beads should be in focus, and moving around. If they are all stationary, the beads may have sunk to the bottom and you will need to prepare a new slide.
+    %\begin{enumerate}
+    As you adjust the objective lens with the micrometer positioning knob, you will see the laser beam focus on the camera viewer at two different heights of the objective lens. You will be able to view the beads being trapped when the objective lens is positioned near these two heights. The beads should be in focus, and moving around. If they are all stationary, the beads may have sunk to the bottom and you will need to prepare a new slide.
 
-    \end{enumerate}
+    %\end{enumerate}
 
     \item Adjust the LED voltage and camera shutter speed as needed to get a good image. Keep in mind that a higher LED voltage will allow for a faster shutter speed and frame rate.
 
@@ -533,7 +533,7 @@ After doing this, the red LED indicators at the top of the joystick should alter
 \begin{figure}[h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/OTZ/Beads.png}{\includegraphics[width=0.7\linewidth]{images/Beads.png}}
-    \caption{This is an example of what you should be seeing in your camera. The circled spots are the 1.01 micro meter silica beads.}
+    \caption{This is an example of what you should be seeing in your camera. The circled spots are the 1.01 micron silica beads.}
     \label{fig:Beads}
 \end{figure}
 
@@ -581,7 +581,7 @@ Before taking data from the QPD, the QPD should be aligned so that the laser hit
 
 The QPD signal is indicated by the blue ``x'' on the $V_y$ vs. $V_x$ graph. If this is not centered at the origin, adjust the knurled adjusting screws on the top and front of the QPD mount to bring the blue ``x'' to the origin.
 
-If you are unable to zero the signal, first check to see if something like a second bead or debris has entered the trap (e.g. disable the laser and watch how many beads leave the trap). Also check that the green fluorescent laser is off whenever analyzing QPD readouts, as this laser affects the results.
+If you are unable to zero the signal, first check to see if something like a second bead or debris has entered the trap (i.e. disable the laser and watch how many beads leave the trap). Also check that the green fluorescent laser is off whenever analyzing QPD readouts, as this laser affects the results.
 
 The QPD zero signal will vary somewhat with the power level of the laser. Hint: If you are doing calibrations with beads at multiple power levels, you can zero the QPD signal at the highest power level, and then switch to lower and lower power levels without too much problem. If you precisely zero it at a low power level, you will find more drift in $V_x$ and $V_y$ as you move to higher power levels.
 
@@ -681,7 +681,7 @@ Results of these calibrations are provided below for your use. If you would like
 
 \textbf{Pixel to meter conversion of the microscope image}
 
-A micrometer slide with markings at 10 micron increments was used to measure the pixels/micron of the video image. The result: $1\mu = 27.17 \pm 1.5$ pixels (last measured by Eric Parsonnet, June 2015). If you want to use images captured from the video camera to analyze movements or sizes of structures, this information may come in handy.
+A micrometer slide with markings at 10 micron increments was used to measure the pixels/micron of the video image. The result: $1\mu m = 27.17 \pm 1.5$ pixels (last measured by Eric Parsonnet, June 2015). If you want to use images captured from the video camera to analyze movements or sizes of structures, this information may come in handy.
 
 \begin{figure}[h]
     \centering
@@ -698,10 +698,10 @@ To find the average step size of motorized stage movements in +Y,-Y,+X,-X direct
 
 The average step sizes were:
 \begin{align*}
-    &\emph{left: } 37.04 \;\mu/\text{step} \\
-    &\emph{right: } 27.78 \;\mu/\text{step} \\
-    &\emph{up: } 25.64 \;\mu/\text{step} \\
-    &\emph{down: } 35.71 \;\mu/\text{step}
+    &\emph{left: } 37.04 \;nm/ \text{step} \\
+    &\emph{right: } 27.78 \;nm/\text{step} \\
+    &\emph{up: } 25.64 \;nm/\text{step} \\
+    &\emph{down: } 35.71 \;nm/\text{step}
 \end{align*}
 
 \newpage
@@ -801,7 +801,7 @@ The thermal motion of a spherical bead of known size suspended in water is well 
 
     \item With the emission filter on to remove the trapping laser reflection off the coverslip, lower the bead until it hits the coverslip and goes out of focus. Using the focus as a guide, find and record the height of the coverslip. The z-axis adjustment knob has micrometer marking, which you can use for this purpose.
 
-    \item From the coverslip, raise the bead 20 -30  microns up (note that 1 revolution on the micrometer screw corresponds to 500 microns displacement). If the bead is too low, edge effects due to contact with the coverslip will restrict the brownian motion, while at heights above 20 -30 microns the optical trap loses its tight focus (the objective lens is designed to focus the laser through oil, so it will not focus well far above the coverslip)
+    \item From the coverslip, raise the bead 20 -30  microns up (note that 1 revolution on the micrometer screw corresponds to 50 microns displacement). If the bead is too low, edge effects due to contact with the coverslip will restrict the brownian motion, while at heights above 20 -30 microns the optical trap loses its tight focus (the objective lens is designed to focus the laser through oil, so it will not focus well far above the coverslip)
 
     \item Record QPD data using the 'Save Voltage Data and Graph' button with the 'Sample Rate' set to 5,000 Hz and the 'History Length' set to 5 seconds. You can get an idea of what the fitted PSD data will look like, and what sensitivity/stiffness values you should roughly get, by clicking 'Fit PSD and Save Data/Graph'. However, you will have to do the fit yourself as well starting from the voltage data, since the OTKBv7 program's fit will not supply you with all the necessary information.
 
@@ -1069,7 +1069,7 @@ One can divide cellular motility mechanisms into two classes based on the cytosk
 \end{minipage}
 \end{figure}
 
-Virtually all cell types exhibit directed intracellular transport, but some cell types are particularly suitable for transport studies. Fish-scale pigment cells work well, since a large fraction of the cargoes that are transported are pigmented and thus easy to observe – the disadvantage is that you would need to bring a living fish into lab as a source of these cells. For convenience, we will use epidermal cells from onion bulbs that you can easily acquire in a grocery store. With some care, a single layer of cells can be peeled off an inner section of the onion bulb and mounted flat on a slide.
+Virtually all cell types exhibit directed intracellular transport, but some cell types are particularly suitable for transport studies. Fish-scale pigment cells work well, since a large fraction of the cargoes that are transported are pigmented and thus easy to observe. The disadvantage is that you would need to bring a living fish into lab as a source of these cells. For convenience, we will use epidermal cells from onion bulbs that you can easily acquire in a grocery store. With some care, a single layer of cells can be peeled off an inner section of the onion bulb and mounted flat on a slide.
 
 \begin{figure}[h]
 \begin{minipage}[t]{.475\textwidth}
