@@ -263,7 +263,7 @@ Once you have determined the optimal settings for the program controls the next 
 
 \newpage
 
-When you click \textbf{Start Acquisition}, the program prompts you to enter two different file paths to save data: a temporary local data file and a network data file. The temporary file is supposed to be on local disk (``C:/'') so that network connectivity does not affect performance. The temporary file is copied to the network storage (your ``Documents/'' directory) when the program terminates. After the files are open, the program begins acquiring records and searching them for pulses. When an output condition is satisfied (i.e. exactly the specified number of pulses is found in each channel, up to the maximum of 2), the program writes out a record of 12 floating-point numbers to the temporary file: time, amplitude, and width of four pulses: 1st pulse in Channel 0, 2nd pulse in Channel 0, 1st pulse in Channel 1, 2nd pulse in Channel 1. If a given pulse is not found in the record, the time, amplitude, and width are assigned zero values. \textbf{IMPORTANT FOR DATA ANALYSIS:} It is the values saved in this text file that you will be working with in the analysis of this lab. This is the file that you should be processing in MatLab, python, ROOT, or your favorite data processing language, as it will have all the information about the signals received from the PMT.
+When you click \textbf{Start Acquisition}, the program prompts you to enter two different file paths to save data: a temporary local data file and a network data file. The temporary file is supposed to be on local disk (``C:/'') so that network connectivity does not affect performance. The temporary file is copied to the network storage (your ``Documents/'' directory) when the program terminates. After the files are open, the program begins acquiring records and searching them for pulses. When an output condition is satisfied (i.e. exactly the specified number of pulses is found in each channel, up to the maximum of 2), the program appends a record of 12 floating-point numbers to an array: time, amplitude, and width of four pulses: 1st pulse in Channel 0, 2nd pulse in Channel 0, 1st pulse in Channel 1, 2nd pulse in Channel 1. If a given pulse is not found in the record, the time, amplitude, and width are assigned zero values. \textbf{IMPORTANT FOR DATA ANALYSIS:} After the save time has elapsed, this array is written to the local temporary file. It is the values saved in this text file that you will be working with in the analysis of this lab. This is the file that you should be processing in MatLab, python, ROOT, or your favorite data processing language, as it will have all the information about the signals received from the PMT.
 
 As the program runs, it updates a histogram of decay events, where the x-axis specifies the time between the two registered pulses. If everything is working correctly, this should mimic the Muon lifetime decay curve.
 
@@ -414,7 +414,6 @@ In experimental physics it is important to understand the electronics you work w
     
     %\textbf{This is a Checkpoint: }Which function did you fit to the time difference data? Explain what the mean and standard deviation tell you about the data and its physical significance.
     
-\newpage
 
     \item \textbf{Efficiency of the digitizer}. Since you will determine the muon lifetime from a histogram of \emph{counts vs time}, you will need to make sure that each time interval is counted by the apparatus equally. To check this, you need to present the apparatus with \emph{a-priori} uniform distribution of time differences. This is done by combining signals from two \emph{uncorrelated} sources: a through-going muon, and an external pulse generator (DG645). As long as the counting rates from the two sources are similar, it's likely that the two trigger pulses will come from different sources.
 
@@ -446,7 +445,6 @@ In experimental physics it is important to understand the electronics you work w
 
     \item \textbf{Calibration of the digitizer clock}. Even though the VI reports the time interval $dt$ in seconds, you need to check that the time scale is accurate. To do this, you need to send pairs of pulses from DG645 generator to the digitizer, vary the time interval between the pulses, and reconstruct this time interval with the VI.
 
-\newpage
 
     \begin{itemize}
         \item First, reconfigure the internal trigger of the Delay Generator to 12.5kHz (this should be half the value used in the previous part). If the value is kept at 25kHz, a third pulse may be detected (why?).
