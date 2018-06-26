@@ -480,22 +480,22 @@ Read the \href{http://experimentationlab.berkeley.edu/sites/default/files/images
 
     \item Now add some of the liquid nitrogen to the cryostat, so it can begin cooling. Pour slowly so as to not splash the LN2 on anyone. Move on to the next step, periodically checking the temperature displayed by the Lakeshore 330 Temperature Controller and the Control Program display. When it reaches 240K, add more liquid nitrogen. \emph{Always wear the blue gloves and a face shield while handling liquid nitrogen}. NOTE: You MUST add liquid nitrogen to the cryostat, even if you are only taking data for above room temperature.
 
-    \item With the Control Program now open, input the experimental parameters: Sample Current, Magnetic Field in Gauss (Max 5000), Start Temperature, and End Temperature (K). Name a file to save with an extension of *.TXT or *.DAT for your data (dialog box will pop up). Test the system by inputting the temperature range of 120K to 200K.
+    \item With the Control Program now open, input the experimental parameters: Sample Current, Magnetic Field in Gauss (Max 5000), Start Temperature, and End Temperature (K). Name a file to save with an extension of *.TXT or *.DAT for your data (dialog box will pop up). Test the system by inputting the temperature range of 120K to 200K and letting it run.
     
-    \checkpoint{Apparatus and Procedures}{Once you have taken your first testing run of system, explain the apparatus and the operating procedures to Professor or GSI.}
+    \checkpoint{Apparatus and Procedures}{Once you have taken your test run of the system, explain the apparatus and operating procedures to either a Professor or GSI. What data are you collecting? Draw diagrams (in the style of figure \ref{fig:VanDerPauwConfiguration}) that show how current and voltage are measured in both the parallel and perpendicular configurations. What quantities are each useful for determining?}
     
     \end{enumerate}
     
 
-    You need to make 5 different sample current runs. You cannot run or take data overnight, and thus must plan accordingly. Using the default temperature range of 95K to 350K, the program will take about 1 hour 40 minutes to finish. If you want to stop early, use the STOP button (only click it once). DO NOT close LabView or X out the program. This takes about 60 seconds to stop. You will likely get 2 full runs per lab.
+    You need to make 5 different sample current runs. You cannot run or take data overnight, and thus must plan accordingly. Using the default temperature range of 95K to 350K, the program will take about 1 hour 40 minutes to finish. If you want to stop early, use the STOP button (only click it once). DO NOT close LabView or X out the program. This takes upwards of 60 seconds to stop.
     
     
-    \textbf{When finished for the day, stop the Control Program or let it finish data taking. Turn off GOLD Box and Heater controller before you leave.}
+    \textbf{When finished for the day, stop the Control Program or let it finish taking data. Turn off the GOLD Box and Heater controller before you leave.}
     
 
     
     
-    \checkpoint{Extrapolating Data}{Once you have taken your first run of data (besides the test run), determine what the Resistivity and Hall coefficients at room temperature are. How accurate are your measurements? What type of semiconductor are we dealing with (p-type or n-type) and how do you know this? At what temperature does the material transition between intrinsic and extrinsic? Finally, make sure you understand how to extrapolate the conductivity and find the ratio of the Hole and Electron Mobility at the point of transition between extrinsic and intrinsic regions (Talk to a GSI or review section 3.3 in Melissinos).}
+    \checkpoint{Extrapolating Data}{Once you have taken your first run of data after the test run, determine what the Resistivity and Hall coefficients at room temperature are. How accurate are your measurements? What type of semiconductor are we dealing with (p-type or n-type) and how do you know this? At what temperature does the material transition between intrinsic and extrinsic? Finally, make sure you understand how to extrapolate the conductivity and find the ratio of the Hole and Electron Mobility at the point of transition between extrinsic and intrinsic regions (Talk to a GSI or review section 3.3 in Melissinos).}
     
     \newpage
     
@@ -536,7 +536,7 @@ Read the \href{http://experimentationlab.berkeley.edu/sites/default/files/images
 The following should be included in your report:
 
 \begin{enumerate}
-    \item Resistivity and Hall Coefficient of the sample at room temperature. At what magnetic field intensity, would the E field due to Hall effect be of the same magnitude (though perpendicular in direction) as the E field due to resistance?
+    \item Resistivity and Hall Coefficient of the sample at room temperature. At what magnetic field intensity would the E field due to Hall effect be of the same magnitude (though perpendicular in direction) as the E field due to resistance?
 
     \item Plot of resistivity $\rho$ of the sample versus inverse temperature. Find at what temperature values the sample is in the extrinsic or intrinsic regions.
 
@@ -546,13 +546,14 @@ The following should be included in your report:
 
     \item Calculate the carrier mobility ($\mu$) and carrier concentration (n).
 
-    \item Plot (Hall coefficient X conductivity) versus $T$. Where does Hall coefficient becomes zero.
+    \item Plot (Hall coefficient $\times$ conductivity) versus $T$. Where does the Hall coefficient becomes zero?
 
     \item Explain what type of material we have: p-type or n-type. (Why don't you need to know the direction of the magnetic field after all?)
 
-    \item Find electron or hole concentrations for the sample versus temperature.\\
+   
     \checkpoint{Electron or Hole Concentrations}{Explain to Professor or GSI which formulas you will use to find the electron or hole concentrations.}
-    
+     \item Find electron or hole concentrations for the sample versus temperature.
+     
     \item Find the Hall Coefficient $ R_H $ and the Hall mobility $\mu_H = R_H \cdot \sigma$ versus temperature.
 
     \item Find electron or hole concentration in the extrinsic region see \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/SHE/24-Haller.pdf}{\textbf{E. Haller Article}}.
