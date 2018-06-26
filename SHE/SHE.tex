@@ -177,6 +177,7 @@ You should keep a laboratory notebook. The notebook should contain a detailed re
 
 A Conduction band is a region in energy space (collection of different energy levels) where the lowest energy range of vacant electronic states resides and where charge carriers (electrons or holes) can move freely through a material.
 
+\newpage
 
 \textbf{Conductor}
 
@@ -317,10 +318,13 @@ To determine the electrical resistance of an object, one measures two quantities
 \end{figure}
 
 Consider a semiconductor sample placed in the magnetic field $B$ that is in the $z$-direction (refer to Figure \ref{fig:HallEffectGeometry}). Suppose we pass a current $I$ through that sample perpendicular to the magnetic field, say in the $x$-direction. Then the "free" electrons and "holes" in the sample experience a force given by the Lorentz equation,
+
 \begin{equation}
     \vec{F}=q(\vec{\nu}\times\vec{B}) \quad [N]
 \end{equation}
+
 where $Q$ is the charge of free carriers and $ \vec{\nu} $ their velocity. This force deflects \emph{any} charge carriers towards in the positive y direction. If the charge carriers are predominantly electrons, this creates an excess negative charge on the $+y$ side of the semiconductor sample, and thus a positive charge on the $-y$ side. This charge distribution generates an electric field $ E_H $ (the Hall field) pointing in the $+y$ direction which (1) balances the Lorentz force so as to keep current flowing along the $x$-direction, and (2) yields a voltage difference $ V_H=sE_H $ (the Hall voltage, named after E.H. Hall who discovered this effect in 1879) across the sample of width \emph{s}. Considering the balance of forces on the charge carriers,
+
 \begin{equation}
     \vec{F}=q(\vec{E}+\vec{\nu}\times\vec{B})=0 \quad [N]
 \end{equation}
@@ -328,6 +332,7 @@ we see that
 \begin{equation}
     E_H=\nu_xB_z \quad [V/\text{m}]
 \end{equation}
+
 Since $ I\propto qv_x $, we see that the sign of the Hall voltage $ V_H $ will depend on whether the charge carriers are predominantly negatively (electrons) or positively (holes) charged. Thus, by measuring the Hall voltage we can determine whether we have an n-type or p-type semiconductor.
 
 Let us now consider how the velocity of charge carriers, as measured through the Hall effect, can be related to important parameters of the semiconductor sample. Suppose the charge carriers in our sample are the (negatively charged) electrons, i.e. our semiconductor is n-type. Taking into account the dimensions of the sample, the total current is related to the density of charge carriers \emph{n} and their drift velocity $ \nu_x $ as
@@ -335,27 +340,31 @@ Let us now consider how the velocity of charge carriers, as measured through the
 \begin{equation}
     I=(-env_x)(sd) \quad [A]
 \end{equation}
+
 i.e. as the product of the current density $ J=-qn\nu_x $ and the cross-sectional area of the conductor. Recalling the relation of the Hall voltage, we obtain the following expression by which the electron density may be determined:
 
 \begin{equation}
     V_H=-\frac{I_xB_z}{end} \quad [V]
 \end{equation}
+
 Using this definition, we also obtain the Hall coefficient $ R_H $ as
 
 \begin{equation}
     R_H=\frac{E_H}{J_xB_z}=\frac{1}{en} \quad [\text{m}^3/C]
 \end{equation}
+
 We use these expressions if the Hall voltage $ V_H $ is negative. If $ V_H $ is positive, our sample is a p-type semiconductor, the current through which is carried by holes the density which, \emph{p}, is determined through
 
 \begin{equation}
     V_H=\frac{I_xB_z}{epd} \quad [V]
 \end{equation}
+
 and obtain for the Hall coefficient $R_H = -1/ep$.
 
 Finally, we note that the current through a semiconductor may be \emph{simultaneously} due both to electrons and to holes. To isolate the density of each, rather than just the overall charge-weighted carrier density, we must examine and interpret the dependence of the Hall voltage on temperature.
 
 \subsection{Van Der Pauw Technique}
-(Note: It is critical to your understanding of this experiment to not only be able to differentiate the two types of current/voltage measurements explained in this section, but to explain why we need them. It is a good idea to draw \emph{all} current/voltage combinations discussed. Talk to a GSI or faculty member if you're confused about the significance of each type of measurement.)
+(Note: It is critical to your understanding of this experiment to not only be able to differentiate the two types of current/voltage measurements explained in this section, but to explain why we need them. It is a good idea to draw \emph{all} current/voltage combinations discussed. Talk to a GSI or professor if you're confused about the significance of each type of measurement.)
 
 \begin{figure}[h]
     \centering
@@ -364,31 +373,7 @@ Finally, we note that the current through a semiconductor may be \emph{simultane
     \label{fig:VanDerPauwConfiguration}
 \end{figure}
 
-A clever way of obtaining the Hall voltage and also the resistivity of the sample is the so-called Van der Pauw technique \href{http://experimentationlab.berkeley.edu/node/105}{\textbf{Van Der Pauw Theorem}} . Suppose we have a semiconductor sample containing four small contacts \emph{A}, \emph{B}, \emph{C}, and \emph{D} as shown in Figure \ref{fig:VanDerPauwConfiguration}. We will use these four contacts to variably drive currents and measure voltage drops, using, for example, the notation that $I_{AB}$ is the current driven from point A to point B, and that $V_{CD}$ is the voltage drop between points C and D (defined positive if the voltage at C is higher than at D). For each configuration of current flow and voltage measurement, we will measure the "trans-resistance" denoted as, for example, $R_{AB,CD} = V_{CD} / I_{AB}$. Four different measurement configurations will be used, as indicated by the table below:
-
-Measurements indicated by the first two rows (e.g. current driven between adjacent points) will lead us to the resistivity, while those in the last two rows (e.g. current driven between non-adjacent points) lead to the Hall voltage. Starting with the Hall voltage, we simply use the last two sets of measured quantities to obtain the average trans-resistance $(R_{AC,BD} + R_{BD,CA})/2$. We use this quantity, along with a measurement of the magnetic field $B_z$, and of the sample dimensions to obtain the Hall coefficient, applying the formulae of equations 5 or 7 depending on the sign of the trans-resistance. If this part is confusing, it's worth both drawing a picture to visualize the relevant quantities, as well as reviewing the video.
-
-
-Determining the resistivity $\rho$ of the sample is somewhat more subtle. Leaving detailed derivations for Appendix A, we will make use of the Van der Pauw equation
-\begin{equation}
-\label{eq:VanDerPauwEquation}
-    \exp \left(\frac{-\pi d}{\rho} R_{AB,CD} \right) + \exp \left(\frac{-\pi d}{\rho} R_{AD,CB} \right) = 1
-\end{equation}
-by which $\rho$ is implicitly determined (here $d$ is the sample depth, referring to Figure \ref{fig:HallEffectGeometry}). While this equation appears difficult to solve, one readily sees that all solutions with the same \emph{ratio} $R_{AB,CD} / R_{AD,CB}$ are trivially related to each other. Thus, we may write for the resistivity
-\begin{equation}
-\label{eq:Resistivity}
-    \rho = \frac{\pi d}{\ln(2)} \cdot \frac{(R_{AB,CD}+R_{AD,CB})}{2} \cdot f \left( \frac{R_{AB,CD}}{R_{AD,CB}} \right)
-\end{equation}
-The only difficult part remaining is the determination of the function $f(x)$, a task which need be performed only once, and which is indeed already performed for us; the solution is graphed in Figure \ref{fig:FVersusResistanceRatio}. To a good approximation, we may take $f(x) = 1/\cosh(\ln(x)/2.403)$ (to better than 0.1\% for $x < 2.2$), and better than 1\% for $x < 4.3$). For the derivation of equations \eqref{eq:VanDerPauwEquation} and \eqref{eq:Resistivity} see Appendix A.
-
-\begin{figure}[h]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE76image003.jpg}{\includegraphics[width=0.7\linewidth]{images/SHE76image003.jpg}}
-    \caption{The function $f$ versus the resistance ratio. This function is used to determine the resistivity of the sample. Here $R_{12,34}$ is equivalent to $R_{AB,CD}$ and $R_{23,41}$ is same as $R_{AD,CB}$. (This figure appears in "Semiconductor Materials, Lecture Notes for MSE 223" by E. E. Haller, Department of Materials Science and Engineering, University of California Berkeley.)}
-    \label{fig:FVersusResistanceRatio}
-\end{figure}
-
-For good measure, once the above procedure has been completed, it is worthwhile to verify our experimental technique. Thus, we will make four more sets of measurements (just the reverse of the previous ones), indicated by the table below.
+A clever way of obtaining the Hall voltage and also the resistivity of the sample is the so-called Van der Pauw technique \href{http://experimentationlab.berkeley.edu/node/105}{\textbf{Van Der Pauw Theorem}} . Suppose we have a semiconductor sample containing four small contacts \emph{A}, \emph{B}, \emph{C}, and \emph{D} as shown in Figure \ref{fig:VanDerPauwConfiguration}. We will use these four contacts to variably drive currents and measure voltage drops, using, for example, the notation that $I_{AB}$ is the current driven from point A to point B, and that $V_{CD}$ is the voltage drop between points C and D (defined positive if the voltage at C is higher than at D, negative otherwise). For each configuration of current flow and voltage measurement, we will measure the "trans-resistance" denoted as, for example, $R_{AB,CD} = V_{CD} / I_{AB}$. Four different measurement configurations will be used, as indicated by the table below, as well as their reverse configuration. The results of the two sets of measurements should obviously agree.
 
 \begin{center}
     \begin{tabular}{l|l|l}
@@ -400,12 +385,38 @@ For good measure, once the above procedure has been completed, it is worthwhile 
     \end{tabular}
 \end{center}
 
-Once again, we use these trans-resistances to determine the Hall voltage and the resistivity. The results of the two sets of measurements should obviously agree.
+We use these measurements to determine the Hall voltage and the resistivity. Measurements indicated by the first two rows (e.g. current driven between adjacent points) will lead us to the resistivity, while those in the last two rows (e.g. current driven between non-adjacent points) lead to the Hall voltage. Starting with the Hall voltage, we simply use the last two sets of measured quantities to obtain the average trans-resistance $(R_{AC,BD} + R_{BD,CA})/2$. We use this quantity, along with a measurement of the magnetic field $B_z$, and of the sample dimensions to obtain the Hall coefficient, applying the formulae of equations 5 or 7 depending on the sign of the trans-resistance. If this part is confusing, it's worth drawing a picture to visualize the relevant quantities, reviewing the video, and perhaps talking with lab staff. These concepts are critical to understanding the analysis.
+
+Determining the resistivity $\rho$ of the sample is somewhat more subtle. Leaving detailed derivations for Appendix A, we will make use of the Van der Pauw equation
+
+\begin{equation}
+\label{eq:VanDerPauwEquation}
+    \exp \left(\frac{-\pi d}{\rho} R_{AB,CD} \right) + \exp \left(\frac{-\pi d}{\rho} R_{AD,CB} \right) = 1
+\end{equation}
+
+by which $\rho$ is implicitly determined (here $d$ is the sample depth, referring to Figure \ref{fig:HallEffectGeometry}). While this equation appears difficult to solve, one readily sees that all solutions with the same \emph{ratio} $R_{AB,CD} / R_{AD,CB}$ are trivially related to each other. Thus, we may write for the resistivity
+
+\begin{equation}
+\label{eq:Resistivity}
+    \rho = \frac{\pi d}{\ln(2)} \cdot \frac{(R_{AB,CD}+R_{AD,CB})}{2} \cdot f \left( \frac{R_{AB,CD}}{R_{AD,CB}} \right)
+\end{equation}
+
+The only difficult part remaining is the determination of the function $f(x)$, a task which need be performed only once, and which is indeed already performed for us; the solution is graphed in Figure \ref{fig:FVersusResistanceRatio}. To a good approximation, we may take $f(x) = 1/\cosh(\ln(x)/2.403)$ (to better than 0.1\% for $x < 2.2$), and better than 1\% for $x < 4.3$). For the derivation of equations \eqref{eq:VanDerPauwEquation} and \eqref{eq:Resistivity} see Appendix A.
+
+\begin{figure}[h]
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE76image003.jpg}{\includegraphics[width=0.7\linewidth]{images/SHE76image003.jpg}}
+    \caption{The function $f$ versus the resistance ratio. This function is used to determine the resistivity of the sample. Here $R_{12,34}$ is equivalent to $R_{AB,CD}$ and $R_{23,41}$ is same as $R_{AD,CB}$. (This figure appears in "Semiconductor Materials, Lecture Notes for MSE 223" by E. E. Haller, Department of Materials Science and Engineering, University of California Berkeley.)}
+    \label{fig:FVersusResistanceRatio}
+\end{figure}
+
 
 From measurements of the resistivity, we obtain the \emph{mobilities} of the charge carriers in our sample as follows:
+
 \begin{equation}
     1/\rho = e \cdot (n\cdot\mu_n + p\cdot\mu_p)
 \end{equation}
+
 Here, $\mu_n$ is the electron mobility and $\mu_p$ the hole mobility. This equation is trivially adapted to samples in which the carriers are exclusively either electrons or holes. The charge carrier densities $n$ (electrons) and $p$ (holes) come from our Hall voltage measurements.
 
 Finally, having experimentally determined the carrier concentrations and mobilities, we obtain their drift velocities, given as $\nu_{de} = \mu_n E$ for electrons and as $\nu_{dp} = \mu_p E$ for holes. In both expressions, $E$ is the magnitude of the electric field which drives the current.
@@ -415,7 +426,7 @@ Finally, having experimentally determined the carrier concentrations and mobilit
 
 In this experiment we are going to make measurements of Hall Voltage and sample resistivity as it varies with temperature. We will start with the sample at room temperature, around 295K. Adding liquid nitrogen, we will begin to cool down the sample. Below 240K we will add more liquid nitrogen to replace boil off. Once the system has reached the specified starting temperature, the computer automatically senses it. At this point the heater will start warming up the sample. Once this begins, it is not possible to change the starting and ending temperatures, except by stopping the experiment early. The computer will begin to record data every degree change as the temperature rises at 5K per minute (these data should be preserved in the data file, even if the program is terminated early or even if the computer crashes). The temperature controller (running autonomously) will stop heating the sample at the ending temperature, and the computer will stop taking data. We are going to stop at no higher than 400K to prevent the melting of the soldered contacts on the sample (the contacts will begin to break down at 429K and we want to stay below that point). In fact, the default temperature range of 95K to 350K should be sufficient. 
 
-The contact points of the sample consist of Boron dopant covered by a Palladium layer which in turn is covered by a gold layer which is covered by an indium layer. Then, wires are pressed onto the indium contacts (see photo, below, of this process). These contacts are very delicate. Please do not touch them. If you think there is a problem with the mounted sample, ask for help from the staff.
+The contact points of the sample consist of Boron dopant covered by a Palladium layer which in turn is covered by a gold layer which is covered by an indium layer. Then, wires are pressed onto the indium contacts (see photo below of this process). These contacts are very delicate. Please do not touch them. If you think there is a problem with the mounted sample, ask for help from the staff.
 
 \begin{figure}[h]
     \centering
@@ -424,7 +435,7 @@ The contact points of the sample consist of Boron dopant covered by a Palladium 
     \label{fig:SHEimage099}
 \end{figure}
 
-Once all the data have been collected, we are going to reverse the magnetic field and take the same data again. After that is done, we will turn off the magnetic field. (Actually, we will actively drive it to zero field with a small winding current. This overcomes residual hysteretic field.) We will take a third set of data at zero magnetic field (why?). \href{http://experimentationlab.berkeley.edu/hysteresis}{\textbf{What is hysteresis?}}
+Once all the data have been collected, we are going to reverse the magnetic field and take the same data again. After that is done, we will turn off the magnetic field (Actually, we will actively drive it to zero field with a small winding current. This overcomes residual hysteretic field). We will take a third set of data at zero magnetic field (why?). \href{http://experimentationlab.berkeley.edu/hysteresis}{\textbf{What is hysteresis?}}
 \\
 
 The sample we are going to use for this experiment is a doped germanium crystal that is cut out into an approximately 10mm x 10mm square $\pm$ 0.01mm with thickness of approximately 1.25 millimeters $\pm$ 0.01mm. The sample is mounted in a cryostat as shown in the Figure \ref{fig:OperatingPositionOfCryostat}. The germanium crystal is mounted to the front side of the copper block with connection leads A, B, C, and D. The backside of the copper block contains a silicon diode temperature sensor (DT-470/471/670 SD). This diode measures the temperature of the sample and is a two-lead device with a capability of a four-wire configuration for making more accurate measurements. The temperature range for the diode measurement is about 4K to 475K (though, again, the rest of the apparatus is more sensitive to temperature than this). Two wires out of four assigned to the diode are current leads, \emph{I±.} The diode's other two leads are for the voltage measurement, \emph{V±.}
@@ -466,7 +477,6 @@ Read the \href{http://experimentationlab.berkeley.edu/sites/default/files/images
 
     \item Turn the water on. There are two valves that must be opened, which are located behind the large liquid nitrogen dewar. \emph{The order in which you do this matters.} First open the lever valve labelled \textbf{Return/Out}, then open the \textbf{Main Water/In}. Finally, push the button on the grey interlock box for about 5 seconds. At first the light might blink, but it should stop doing so in about a minute.
     
-    \newpage
     
     \item If the vacuum isn't set up, plug in the pump and open the vacuum valve on the chamber. Make sure the vacuum is below 100 mTorr. \textbf{NOTE: Leaving the vacuum on 24/7 is okay.}
 
@@ -492,12 +502,13 @@ Read the \href{http://experimentationlab.berkeley.edu/sites/default/files/images
     
     \textbf{When finished for the day, stop the Control Program or let it finish taking data. Turn off the GOLD Box and Heater controller before you leave.}
     
+    \newpage
+
 
     
     
     \checkpoint{Extrapolating Data}{Once you have taken your first run of data after the test run, determine what the Resistivity and Hall coefficients at room temperature are. How accurate are your measurements? What type of semiconductor are we dealing with (p-type or n-type) and how do you know this? At what temperature does the material transition between intrinsic and extrinsic? Finally, make sure you understand how to extrapolate the conductivity and find the ratio of the Hole and Electron Mobility at the point of transition between extrinsic and intrinsic regions (Talk to a GSI or review section 3.3 in Melissinos).}
     
-    \newpage
     
 
 
