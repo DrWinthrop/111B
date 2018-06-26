@@ -24,7 +24,7 @@
 
 In general the Hall effect refers to the fact that a voltage can develop in a direction transverse to the current flow in a system of charged particles in a magnetic field, owing to the \href{http://experimentationlab.berkeley.edu/sites/default/files/Lorentz\%20force.pdf}{\textbf{Lorentz force}} $q(\mathbf{v} \times \mathbf{B})$.
 
-The electrical resistance of conductors and non-conductors is relatively easy to describe conceptually and mathematically, and experiments illustrating these properties are easy to do. We are all familiar with Ohm's law, and with using dielectrics as insulators. The temperature dependence is nothing unusual. Semiconductors fall in between these two extremes, and their properties require some knowledge of condensed matter physics. The Hall effect illustrates the Lorentz force $\mathbf{v} \times \mathbf{B}$. In this experiment you will measure the resistivity and the Hall coefficient as functions of the temperature, for an Al-doped germanium crystal. You will then determine the concentration of the free carrier. When a current is passed through a sample in the x-direction the Lorentz force acting on the electric charges moving in a magnetic field \textbf{B} (in Z) displaces some carriers in the y-direction. This causes an internal electric field $\mathbf{E}_{H}$ which cancels the Lorentz force in the equilibrium case. You will use the Van der Pauw method of measuring a sample of arbitrary shape using the computer running LabView to acquire these data. The temperature range of this experiment is 77K to 400K.
+The electrical resistance of conductors and non-conductors is relatively easy to describe conceptually and mathematically, and experiments illustrating these properties are easy to do. We are all familiar with Ohm's law, and with using dielectrics as insulators. The temperature dependence is nothing unusual. Semiconductors fall in between these two extremes, and their properties require some knowledge of condensed matter physics. The Hall effect illustrates the Lorentz force $\mathbf{v} \times \mathbf{B}$. In this experiment you will measure the resistivity and the Hall coefficient as functions of the temperature, for an Al-doped germanium crystal. You will then determine the concentration of the free carrier. When a current is passed through a sample in the x-direction the Lorentz force acting on the electric charges moving in a magnetic field \textbf{B} (in Z) displaces some carriers in the y-direction. This causes an internal electric field $\mathbf{E}_{H}$ which cancels the Lorentz force in the equilibrium case. You will use the Van der Pauw method of measuring a sample of arbitrary shape using the computer running LabView to acquire these data. The temperature range of this experiment is 77K to 400K at its most extreme.
 
 \begin{enumerate}
     \item Pre-requisites: None
@@ -264,7 +264,7 @@ is a nonmetallic element (e.g. Si or Ge) that contain both electrons and holes a
 
 \section{Introduction}
 
-The applications of modern semiconductors are immeasurable; they allow us to construct microscopic transistors used in logic gates that act as on or off switches for digital circuitry. Differing semiconductor materials possess different properties, each suitable for the nature of their use. One such property is their ability to conduct under various surrounding environmental conditions. These semi-conductors materials are classified on the carrier concentrations as well as their motions throughout the semiconductor when influenced by external electromagnetic fields. Thus, due to the nature of their scale, these modern building blocks rely heavily on the purity of their states. The semiconductor industry relies on mature technologies for the creation of high purity semiconductors and for their quantitative characterization prior to their use in manufacturing. One important characterization tool in the measurement of the Hall effect to measure mobilities and carrier concentrations in a given semiconductor material. In this experiment, we will make such measurements, observing the Hall effect for one semiconductor sample using the common Van der Pauw technique. The temperature dependence of the Hall coefficient and resistivity will allow us to distinguish between p-type and n-type samples, and to calculate the electron and hole mobilities and concentrations. The maximum sample current you should use is 0.9 mA. You should try a variety of sample currents, probably in order of magnitudes (1 microamp to 0.9 milliamps).
+The applications of modern semiconductors are immeasurable; they allow us to construct microscopic transistors used in logic gates that act as on or off switches for digital circuitry. Differing semiconductor materials possess different properties, each suitable for the nature of their use. One such property is their ability to conduct under various surrounding environmental conditions. These semi-conductors materials are classified on the carrier concentrations as well as their motions throughout the semiconductor when influenced by external electromagnetic fields. Thus, due to the nature of their scale, these modern building blocks rely heavily on the purity of their states. The semiconductor industry relies on mature technologies for the creation of high purity semiconductors and for their quantitative characterization prior to their use in manufacturing. One important characterization tool in the measurement of the Hall effect to measure mobilities and carrier concentrations in a given semiconductor material. In this experiment, we will make such measurements, observing the Hall effect for one semiconductor sample using the common Van der Pauw technique. The temperature dependence of the Hall coefficient and resistivity will allow us to distinguish between p-type and n-type samples, and to calculate the electron and hole mobilities and concentrations. The maximum sample current you should use is 0.9 mA. You should try a variety of sample currents, probably in order of magnitudes (1 $\mu A$ to 0.9 mA).
 
 
 \section{Preliminary Concepts}
@@ -305,7 +305,7 @@ By contrast, a semiconductor such as silicon has fewer charge carriers, ($10^{-1
 
 \section{Hall Effect and Van Der Pauw Technique}
 
-To determine the electrical resistance of an object, one measures two quantities: the current run through the object and the voltage which arises due to the passage of that resistance. There are two typical ways for performing such measurements, either the simple but somewhat inaccurate two-probe technique, or the more cumbersome but more accurate four-probe technique. The difference between these two techniques is particularly pertinent when one wants to measure very small resistances. Using a two-probe technique, such as one usually does with an ohmmeter, current exits the device and runs in series across many resistive elements: the wires coming out of the ohmmeter, the substantial (fraction of an Ohm) contact resistance between the ohmmeter probes and the resistor, then the resistor, more contact resistance, and more wire. The voltage is then measured in the ohmmeter across the \emph{entire} chain of resistors, meaning that the small resistance you were trying to measure is swamped by the extraneous contact resistances. This difficulty is overcome by using a four-probe technique. One device is used to generate current, and run that current across contact resistances as well as the resistor you're trying to measure. Then a second \emph{high-input-impedance} device, i.e. one that draws very little current, is used to sample the voltage \emph{only across the resistor}, and is thereby insensitive to voltage drops due to contact resistance. Since the contact resistance for the \emph{voltage probes} is much smaller than the input impedance of the voltmeter, we obtain a genuine voltage measurement to use in our resistance determination. In this experiment, we will use several well-conceived measurement techniques to determine the resistivity and the Hall voltage across our semiconductor samples.
+To determine the electrical resistance of an object, one measures two quantities: the current run through the object and the voltage which arises due to the passage of that resistance. There are two typical ways for performing such measurements, either the simple but somewhat inaccurate two-probe technique, or the more cumbersome but more accurate four-probe technique. The difference between these two techniques is particularly pertinent when one wants to measure very small resistances. Using a two-probe technique, such as one usually does with an ohmmeter, current exits the device and runs in series across many resistive elements: the wires coming out of the ohmmeter, the substantial (fraction of an Ohm) contact resistance between the ohmmeter probes and the resistor, then the resistor, more contact resistance, and more wire. The voltage is then measured in the ohmmeter across the \emph{entire} chain of resistors, meaning that the small resistance you were trying to measure is swamped by the extraneous contact resistances. This difficulty is overcome by using a four-probe technique. One device is used to generate current, and run that current across contact resistances as well as the resistor you're trying to measure. Then a second \emph{high-input-impedance} device, i.e. one that draws very little current, is used to sample the voltage \emph{only across the resistor}, and is thereby insensitive to voltage drops due to contact resistance. Since the contact resistance for the \emph{voltage probes} is much smaller than the input impedance of the voltmeter, we obtain a genuine voltage measurement to use in our resistance determination. In this experiment, we will use several well-conceived measurement techniques to determine the resistivity using measurements of the Hall voltage across our semiconductor samples.
 
 \subsection{Hall Effect}
 
@@ -355,6 +355,7 @@ and obtain for the Hall coefficient $R_H = -1/ep$.
 Finally, we note that the current through a semiconductor may be \emph{simultaneously} due both to electrons and to holes. To isolate the density of each, rather than just the overall charge-weighted carrier density, we must examine and interpret the dependence of the Hall voltage on temperature.
 
 \subsection{Van Der Pauw Technique}
+(Note: It is critical to your understanding of this experiment to not only be able to differentiate the two types of current/voltage measurements explained in this section, but to explain why we need them. It is a good idea to draw \emph{all} current/voltage combinations discussed. Talk to a GSI or faculty member if you're confused about the significance of each type of measurement.)
 
 \begin{figure}[h]
     \centering
@@ -409,7 +410,12 @@ Here, $\mu_n$ is the electron mobility and $\mu_p$ the hole mobility. This equat
 
 Finally, having experimentally determined the carrier concentrations and mobilities, we obtain their drift velocities, given as $\nu_{de} = \mu_n E$ for electrons and as $\nu_{dp} = \mu_p E$ for holes. In both expressions, $E$ is the magnitude of the electric field which drives the current.
 
-In this experiment we are going to make measurements of Hall Voltage and sample resistivity as it varies with temperature. We will start with the sample at room temperature, around 295K. Adding liquid nitrogen, we will begin to cool down the sample. Below 240K we will add more liquid nitrogen to replace boil off. Once the system has reached the specified starting temperature, the computer automatically senses it. At this point the heater will start warming up the sample. Once this begins, it is not possible to change the starting and ending temperatures, except by stopping the experiment early. The computer will begin to record data every degree change as the temperature rises at 5K per minute (these data should be preserved in the data file, even if the program is terminated early or even if the computer crashes). The temperature controller (running autonomously) will stop heating the sample at the ending temperature, and computer will stop taking the data. We are going to stop at 400K to prevent the melting of the soldered contacts on the sample (the contacts will begin to break down at 156° C and we want to stay below that point). The contact points of the sample consist of Boron dopant covered by a Palladium layer which in turn is covered by a gold layer which is covered by an indium layer. Then, wires are pressed onto the indium contacts (see photo, below, of this process). These contacts are very delicate. Please do not touch them. If you think there is a problem with the mounted sample, ask for help from the staff.
+
+\section{Apparatus and Procedure}
+
+In this experiment we are going to make measurements of Hall Voltage and sample resistivity as it varies with temperature. We will start with the sample at room temperature, around 295K. Adding liquid nitrogen, we will begin to cool down the sample. Below 240K we will add more liquid nitrogen to replace boil off. Once the system has reached the specified starting temperature, the computer automatically senses it. At this point the heater will start warming up the sample. Once this begins, it is not possible to change the starting and ending temperatures, except by stopping the experiment early. The computer will begin to record data every degree change as the temperature rises at 5K per minute (these data should be preserved in the data file, even if the program is terminated early or even if the computer crashes). The temperature controller (running autonomously) will stop heating the sample at the ending temperature, and the computer will stop taking data. We are going to stop at no higher than 400K to prevent the melting of the soldered contacts on the sample (the contacts will begin to break down at 429K and we want to stay below that point). In fact, the default temperature range of 95K to 350K should be sufficient. 
+
+The contact points of the sample consist of Boron dopant covered by a Palladium layer which in turn is covered by a gold layer which is covered by an indium layer. Then, wires are pressed onto the indium contacts (see photo, below, of this process). These contacts are very delicate. Please do not touch them. If you think there is a problem with the mounted sample, ask for help from the staff.
 
 \begin{figure}[h]
     \centering
@@ -419,15 +425,11 @@ In this experiment we are going to make measurements of Hall Voltage and sample 
 \end{figure}
 
 Once all the data have been collected, we are going to reverse the magnetic field and take the same data again. After that is done, we will turn off the magnetic field. (Actually, we will actively drive it to zero field with a small winding current. This overcomes residual hysteretic field.) We will take a third set of data at zero magnetic field (why?). \href{http://experimentationlab.berkeley.edu/hysteresis}{\textbf{What is hysteresis?}}
+\\
 
+The sample we are going to use for this experiment is a doped germanium crystal that is cut out into an approximately 10mm x 10mm square $\pm$ 0.01mm with thickness of approximately 1.25 millimeters $\pm$ 0.01mm. The sample is mounted in a cryostat as shown in the Figure \ref{fig:OperatingPositionOfCryostat}. The germanium crystal is mounted to the front side of the copper block with connection leads A, B, C, and D. The backside of the copper block contains a silicon diode temperature sensor (DT-470/471/670 SD). This diode measures the temperature of the sample and is a two-lead device with a capability of a four-wire configuration for making more accurate measurements. The temperature range for the diode measurement is about 4K to 475K (though, again, the rest of the apparatus is more sensitive to temperature than this). Two wires out of four assigned to the diode are current leads, \emph{I±.} The diode's other two leads are for the voltage measurement, \emph{V±.}
 
-\section{Apparatus and Procedure}
-
-In brief, this experiment involves measuring the resistivity and Hall voltage as functions of temperature on a particular semiconductor sample which has been prepared and mounted into a cryostat (Figure \ref{fig:OperatingPositionOfCryostat}). 
-
-To perform these measurements, we will first cool the sample to the lowest temperatures we will be accessing. This cooling of the apparatus is accomplished by adding liquid nitrogen to the cryostat twice: a first batch of liquid nitrogen will get the temperature down to about 240 K, and then we will keep adding nitrogen to lower the temperature further. A computer interfaced thermometric system is used to control the temperature. Once the specified lowest temperature is reached, a heater is turned on and the sample begins to slowly rise in temperature until the specified highest temperature is reached. This controlled temperature ramp can be terminated by stopping the experiment early. The computer will begin to record data every degree change as the temperature rises at 5K per minute. An upper temperature limit of 400 K is imposed so as not to damage the sample (in particular the leads on the sample). 
-
-The sample we are going to use for this experiment is a doped germanium crystal that is cut out into an approximately 10mm x 10mm square $\pm$ 0.01mm with thickness of approximately 1.25 millimeters $\pm$ 0.01mm. The sample is mounted in a cryostat as shown in the Figure \ref{fig:OperatingPositionOfCryostat}. The germanium crystal is mounted to the front side of the copper block with connection leads A, B, C, and D. The backside of the copper block contains a silicon diode temperature sensor (DT-470/471/670 SD). This diode measures the temperature of the sample and is a two-lead device with a capability of a four-wire configuration for making more accurate measurements. The temperature range for the diode measurement is about 4K to 475K. Two wires out of four assigned to the diode are current leads, \emph{I±.} The diode's other two leads are for the voltage measurement, \emph{V±.} The copper block is mounted to the brass-copper rod containing a 50-watt maximum heating coil through which we will be able to heat up the sample. The brass part of the rod can be thought of as a thermal resistance: we want to limit how fast the sample cools and heats up. The whole assembly is submerged into the chamber in which part of it (copper block with the heating coil) lies in the vacuum and the other part in the chamber where liquid nitrogen will be poured (refer to Figure \ref{fig:OperatingPositionOfCryostat}). Vacuum is needed to keep the Germanium sample from oxidizing when it is heated above room temperature. The cryostat is kept between the poles of the magnet and serves to hold the magnetic field measurement probe in place perpendicular to the magnetic field.
+The copper block is mounted to the brass-copper rod containing a 50-watt maximum heating coil through which we will be able to heat up the sample. The brass part of the rod can be thought of as a thermal resistance: we want to limit how fast the sample cools and heats up. The whole assembly is submerged into the chamber in which part of it (copper block with the heating coil) lies in the vacuum and the other part in the chamber where liquid nitrogen will be poured (refer to Figure \ref{fig:OperatingPositionOfCryostat}). Vacuum is needed to keep the Germanium sample from oxidizing when it is heated above room temperature. The cryostat is kept between the poles of the magnet and serves to hold the magnetic field measurement probe in place perpendicular to the magnetic field.
 
 \begin{figure}[h]
     \centering
@@ -436,117 +438,101 @@ The sample we are going to use for this experiment is a doped germanium crystal 
     \label{fig:OperatingPositionOfCryostat}
 \end{figure}
 
-\begin{itemize}
-    \item The two water valves are behind the magnet labelled "Main Water" (In) and "Return" (out). Open the Return 1st, then open SLOWLY the Main Water while pushing in and holding the button on the grey interlock box behind the magnet near the water valves. Check to see that you have 80 PSI water pressure on the meters on the table behind the magnet.
-\end{itemize}
 
-If NOT see \LabEngineer  immediately.
+In this experiment we are going to use 5000 Gauss electromagnet to observe the Hall effect. The electromagnet is powered by the two 60V DC power supplies connected in series. To prevent the magnet from overheating, water-cooling lines are connected to the magnet. Water interlock circuitry in the grey box monitors the flow of the water through the magnet. When it senses that there is no water circulation, this circuit prevents any significant operation of the magnet by tripping a disconnect relay. Magnet operation resumes as soon as water circulation is restored or the target field is reduced to close to zero. See Figure \ref{fig:SimpleBlockDiagram} for the simple block diagram of the experiment. Note that the data collection software requires water to be flowing.
 
-\begin{itemize}
-    \item To turn off the water, close the Main Water(in) valve 1st, then monitor the water pressure on the meters and when it get to less then 5 PSI, turn off the Return valve.
-\end{itemize}
-
-In this experiment we are going to use 5000 Gauss electromagnet to observe the Hall effect. The electromagnet is powered by the two 60V DC power supplies connected in series. To prevent the magnet from overheating, water-cooling lines are connected to the magnet. Water interlock circuitry in the grey box monitors the flow of the water through the magnet. When it senses that there is no water circulation, this circuit prevents any significant operation of the magnet by tripping a disconnect relay whenever more than 5 watts are being dissipated into the magnet's coil. Magnet operation resumes as soon as water circulation is restored or the target field is reduced to close to zero. See Figure \ref{fig:SimpleBlockDiagram} for the simple block diagram of the experiment. Note that the data collection software still requires water to be flowing, at least at the beginning, even if measurements are being made at zero field.
-
-The magnet is monitored by the LakeShore 450 Gaussmeter. It provides precise measurements of the magnetic fields. \emph{\textbf{To allow the LakeShore 450 to be used in a control loop to reach the target field, its auto-ranging and filtering have both been turned off (these settings persist even when turned off).}} To pass a current through any two leads of the sample we will use 2400 SourceMeter. To measure the voltage across any two leads of the sample we will use 6514 Electrometer. (These are finicky devices, sometimes needing to be turned off and back on again during the start of data-taking.) The 330 Temperature Controller measures and autonomously controls the temperature of the sample using the silicon diode temperature sensor. All these instruments are connected to the computer through a GPIB connection. The operation manuals of these instruments are contained in the Appendix B. {remember to TURN OFF the Temperature Controller when finish for the day, DO NOT LEAVE IT ON!!}
+The magnet is monitored by the LakeShore 450 Gaussmeter. It provides precise measurements of the magnetic fields. \emph{\textbf{To allow the LakeShore 450 to be used in a control loop to reach the target field, its auto-ranging and filtering have both been turned off (these settings persist even when turned off).}} To pass a current through any two leads of the sample we will use 2400 SourceMeter. To measure the voltage across any two leads of the sample we will use 6514 Electrometer (these are finicky devices, sometimes needing to be turned off and back on again during the start of data-taking). The 330 Temperature Controller measures and autonomously controls the temperature of the sample using the silicon diode temperature sensor. All these instruments are connected to the computer through a GPIB connection. The operation manuals of these instruments are contained in the Appendix B. {Remember to TURN OFF the Temperature Controller when finished for the day. DO NOT LEAVE IT ON!!}
 
 The Gold box is Labview computer controlled system that automatically triggers the 2400 Source meter to deliver its current to the sample. It also contains a bank of 16 relays to connect this current to one of four pairs of the sample's leads and measure the corresponding voltage on the remaining pair. The Labview program controls the Gold box and has the capability of switching the above, plus the magnetic field current and the sample current directions. It also monitors the status of the experiment and if something goes wrong, it has the capability to turn things off.
 
 
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHEimage101.gif}{\includegraphics[width=0.7\linewidth]{images/SHEimage101.png}}
     \caption{Simple Block Diagram for the Hall Effect in Semiconductors experiment.}
     \label{fig:SimpleBlockDiagram}
 \end{figure}
 
-\section{Procedure}
 
-Below is a "simple" procedure for this experiment.
-
-Read the Cryogenic Safety sheet \textbf{before} filling the system with Liquid Nitrogen: See the Cryogenic Liquids information from EH\&S. \href{http://experimentationlab.berkeley.edu/sites/default/files/images/77cryogenic.pdf}{\textbf{Cryogenic Liquids}}
+%\section{Procedure}
+Read the \href{http://experimentationlab.berkeley.edu/sites/default/files/images/77cryogenic.pdf}{\textbf{Cryogenic Safety sheet}} from EH\&S \textbf{before} filling the system with Liquid Nitrogen.
 
 \textbf{Always wear the Blue Cryogenic safety gloves, the clear safety goggles, and the clear face shield while handling of LN-2.}
 
-\subsection{Control Program procedure using the Gold box}
+\subsection{Procedure}
 
 \begin{enumerate}
     \item Turn on the computer.
 
-    \item Turn the water on. There are two valves that must be opened; first open the lever valve \textbf{Return} behind the magnet, then open the \textbf{Main Water} valve behind the magnet, and finally push the button on the grey interlock box. Hold the button for about 5 seconds. At first the light might blink but it should stop doing so in about a minute.
+    \item Turn the water on. There are two valves that must be opened, which are located behind the large liquid nitrogen dewar. \emph{The order in which you do this matters.} First open the lever valve labelled \textbf{Return/Out}, then open the \textbf{Main Water/In}. Finally, push the button on the grey interlock box for about 5 seconds. At first the light might blink, but it should stop doing so in about a minute.
+    
+    \newpage
+    
+    \item If the vacuum isn't set up, plug in the pump and open the vacuum valve on the chamber. Make sure the vacuum is below 100 mTorr. \textbf{NOTE: Leaving the vacuum on 24/7 is okay.}
 
-    \item Make sure the vacuum is below 100 milli-torr, plug in the pump and open the vacuum valve on the chamber. \textbf{NOTE: Keep Pump on during the time dewar is still cold, leave on overnight is okay.}
+    \item The red switch of the power strip on the bottom of the upper shelf indicated by the label "POWER SWITCH" controls the power supply of all four devices in the rack. Turn this on. Now turn on all of the electrical equipment in the rack, starting from the top most piece: Electrometer, Current Source, Gauss Meter, the Lakeshore Temperature Controller, and the GOLD Box. Then go to the two power supplies under the bench and turn them on.
 
-    \item Turn on all the equipment in the rack.
+    \item Push the "RUN" button on the GOLD Box (this button is located just above the on/off switch). The power supplies should turn on with a fan sound if they were properly set-up in the previous step.
 
-    \item Starting from the top most piece; Electrometer, Current Source, Gauss Meter, the Lakeshore Temperature Controller, and the GOLD Box. The red on/off switch on the bottom of the top shelf indicated by a label "POWER SWITCH" controls the power supply of all four devices in the rack. Then go to the two power supplies under the bench with the magnet on it and turn the power supplies on.
+     \item On your Desktop or in the Support folder on the C:$\backslash$ drive is the LabView Program called "Control Program v9\_multifield". Open this. Executing this program should result in a window that looks like \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_FrontPanel.pdf}{\textbf{this}}. The data that the program takes is as follows, \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_Data_Taking_Table.pdf}{\textbf{SHE Data Taking Table}}.
 
-    \item Now push the "RUN" button on the GOLD Box (this button is located just above the on/off switch). The power supplies should turn on with a fan sound, if you turned on the circuit breakers on the power supplies.
+    \item Put on the blue gloves, safety glasses, and the face shield (available at your station). With the help of a GSI, fill the white dewar about 20\% full with liquid nitrogen.
 
-    \item On your Desktop or in the Support folder on the C:$\backslash$ drive is the LabView Program called "Control Program v9\_multifield" execute this program, \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_FrontPanel.pdf}{\textbf{SHE Control Program Front Panel}}.
+    \item Now add some of the liquid nitrogen to the cryostat, so it can begin cooling. Pour slowly so as to not splash the LN2 on anyone. Move on to the next step, periodically checking the temperature displayed by the Lakeshore 330 Temperature Controller and the Control Program display. When it reaches 240K, add more liquid nitrogen. \emph{Always wear the blue gloves and a face shield while handling liquid nitrogen}. NOTE: You MUST add liquid nitrogen to the cryostat, even if you are only taking data for above room temperature.
 
-    \item The data that the program takes is as follows, \href{http://experimentationlab.berkeley.edu/sites/default/files/images/SHE_Data_Taking_Table.pdf}{\textbf{SHE Data Taking Table}}.
-
-    \item Run the Control Program; Then input the experiment parameters; Sample Current, Magnet Field in Gauss (Max 5000), Start Temperature, End Temperature (K), then click the Start Experiment button. Name a file to save with an extension of *.TXT or *.DAT for your data (dialog box will pop up).
-
-    \item Test the system by inputting temperature range 120K to 200K.
+    \item With the Control Program now open, input the experimental parameters: Sample Current, Magnetic Field in Gauss (Max 5000), Start Temperature, and End Temperature (K). Name a file to save with an extension of *.TXT or *.DAT for your data (dialog box will pop up). Test the system by inputting the temperature range of 120K to 200K.
     
     \checkpoint{Apparatus and Procedures}{Once you have taken your first testing run of system, explain the apparatus and the operating procedures to Professor or GSI.}
+    
+    \end{enumerate}
+    
 
-    \item Then you can use the defaults 95K to 350K the program will take about 1 hour 40 minutes to finish. The "SAMPLE TEST CONDITION" shown in the Figure \ref{fig:GoldBox.jpg} indicates the concurrent voltage and current measurement by two red and two green LEDs.
+    You need to make 5 different sample current runs. You cannot run or take data overnight, and thus must plan accordingly. Using the default temperature range of 95K to 350K, the program will take about 1 hour 40 minutes to finish. If you want to stop early, use the STOP button (only click it once). DO NOT close LabView or X out the program. This takes about 60 seconds to stop. You will likely get 2 full runs per lab.
+    
+    \\
+    
+    
+    \textbf{When finished for the day, stop the Control Program or let it finish data taking. Turn off GOLD Box and Heater controller before you leave.}
+    
+    
+    \\
+    
+    
+    \checkpoint{Extrapolating Data}{Once you have taken your first run of data, determine what the Resistivity and Hall coefficients at room temperature are. How accurate are your measurements? What type of semiconductor are we dealing with (p-type or n-type) and how do you know this? At what temperature does the material transition between intrinsic and extrinsic? Finally, make sure you understand how to extrapolate the conductivity and find the ratio of the Hole and Electron Mobility at the point of transition between extrinsic and intrinsic regions (Talk to a GSI or review section 3.3 in Melissinos).}
+    
+    \newpage
+    
 
-    \item You need to make 4 different sample current runs.
 
-    \item Do NOT RUN or take data Overnight.
 
-    \item \textbf{If you want to STOP early use the STOP button (Only Click it once) in the program DO NOT Stop LabView or X out the program. This would be like driving your car at 65 miles per hour and you get removed from your car while it is still going.} ( this takes about 60 seconds to stop)
+   
 
-    \item Wear the blue gloves and the face shield (available at your station) and with the help of a GSI fill the white dewar with liquid nitrogen. You do not actually need a full dewar.
 
-    \item Now add some of the liquid nitrogen to the cryostat, so it can begin cooling. Move on to the next step, but periodically check the temperature displayed by the Lakeshore 330 Temperature Controller (check that it is on) and the Control Program display; when it reaches 240K, add more liquid nitrogen.(Always wear the blue gloves and a face shield while handling liquid nitrogen.) NOTE: You MUST add liquid nitrogen to the cryostat, even if you are only taking data for above room temperature.
 
-    \item Check the temperature. The minimum temperature that we are capable of reaching is about 88K, but this is hard to get to; as long as you get bellow approximately 95K you should be fine (88K takes about 1 hour to get).
+%\subsection{Control Program Description}
 
-    \item The Temperature Ramp Rate is set to increase the temperature by 5 Kelvin per minute (calculate how much time it will take for you to complete a run,  but remember, this is NOT an overnight lab: you must finish before closing time).
+%\begin{enumerate}
+%    \item Start the Control Program ie; RUN LabView program
 
-    \checkpoint{Extrapolating Data}{Once you have taken your first run of data determine what the Resistivity and Hall coefficients at room temperature are. How accurate are your measurements? What type of semiconductor are we dealing with (p-type or n-type) and how do you know this? At what temperature does the material transition between intrinsic and extrinsic? Finally, make sure you understand how to extrapolate the conductivity and find the ratio of the Hole and Electron Mobility at the point of transition between extrinsic and intrinsic regions (Talk to a GSI or review section 3.3 in Melissinos).}
+%   \item Input Experiment Parameters
 
-    \item Run the procedure roughly 5 times and make sure you have enough data to analyze.
+%    \item Click Start Experiment
 
-\end{enumerate}
+%    \item The data taking will start after the start temperature is reached the second time.
 
-\begin{enumerate}
-    \item \textbf{When finished for the day, stop the Control Program or let it finish data taking.}
+%    \item there is over shoot you will see it on the temperature graph.
 
-    \item \textbf{Turn off GOLD Box, and Heater controller before you leave the 111-Lab.}
+%    \item Temperature goes below set point then heater will come on and when start temperature is reached again data taking will start.
 
-\end{enumerate}
+%    \item NOTE: if for some reason the program crashes or you accidentally X out the program You must restart the program and just click start experiment button, with no parameters entered, to reset the system.
 
-\subsection{Control Program Description}
+%\end{enumerate}
 
-\begin{enumerate}
-    \item Start the Control Program ie; RUN LabView program
 
-    \item Input Experiment Parameters
+%\begin{enumerate}
 
-    \item Click Start Experiment
 
-    \item The data taking will start after the start temperature is reached the second time.
-
-    \item there is over shoot you will see it on the temperature graph.
-
-    \item Temperature goes below set point then heater will come on and when start temperature is reached again data taking will start.
-
-    \item NOTE: if for some reason the program crashes or you accidentally X out the program You must restart the program and just click start experiment button, with no parameters entered, to reset the system.
-
-\end{enumerate}
-
-Check to see that the Heater is OFF.
-
-\begin{enumerate}
-    \item \textbf{Turn off GOLD Box, and Heater controller when finished before you leave the 111-Lab.}
-
-\end{enumerate}
+%\end{enumerate}
 
 \section{Report}
 
