@@ -231,19 +231,28 @@ The diffusion is also observable in real space: a cold gas of atoms localized in
 \subsubsection{Rubidium Spectrum}
 \label{subsubsec:RubidiumSpectrum}
 
+%\begin{figure}[h]
+%    \centering
+%    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/400px-MOTimage005.png}{\includegraphics[height=2.5 in]{images/Rb85levels.png}}
+%    \caption{Hyperfine levels for the 5$S_{1/2}$ ground state (hyperfine spin quantum number $F$) and 5$P_{3/2}$ excited state (hyperfine spin quantum number $F^\prime$) are shown.  Energy differences shown in frequency units.  The transitions used for cooling and rempump light are indicated.}
+%    \label{fig:400px-MOTimage005}
+%\end{figure}
+
 \begin{figure}[h]
     \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/400px-MOTimage005.png}{\includegraphics[height=2.5 in]{images/Rb85levels.png}}
-    \caption{Hyperfine levels for the 5$S_{1/2}$ ground state (hyperfine spin quantum number $F$) and 5$P_{3/2}$ excited state (hyperfine spin quantum number $F^\prime$) are shown.  Energy differences shown in frequency units.  The transitions used for cooling and rempump light are indicated.}
+
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/images/400px-MOTimage005.png}{\includegraphics[height=2.5 in]{MOT/images/Rb_D2_levels.PNG}}
+    \caption{Hyperfine levels for the 5$S_{1/2}$ ground state (hyperfine spin quantum number $F$) and 5$P_{3/2}$ excited state (hyperfine spin quantum number $F^\prime$) are shown.  Rb-85 is on the left, and Rb-87 is on the right. Energy differences shown in frequency units.  The transitions used for cooling and rempump light are indicated.}
     \label{fig:400px-MOTimage005}
 \end{figure}
 
 
-Rubidium is composed naturally of two stable isotopes, $^{85}$Rb and $^{87}$Rb. In this experiment, we create a MOT for $^{85}$Rb atoms. A pertinent level diagram for $^{85}$Rb is shown in Figure~\ref{fig:400px-MOTimage005} further detail on both isotopes of rubidium is available in Ref.~\cite{Steck}. The transition used for laser cooling drives atoms from the $F = 3$ ground state to the $F' = 4$ excited state of the D2 line. This transition is nominally closed, meaning that atoms will continue to scatter light through many absorption/emission cycles. However, rare off-resonant excitation to the $F' = \{2,3\}$ excited states does allow the atom to decay to the $F = 2$ ground state, where it is far-detuned from the cooling light and thus lost to the laser cooling process. To mend this problem, we introduce also light resonant with the $F = 2 \rightarrow F' = 3$ transition, which pumps atoms back to the laser cooled states.
+
+Rubidium is composed naturally of two stable isotopes, $^{85}$Rb and $^{87}$Rb. In this experiment, we create a MOT for $^{85}$Rb atoms. A pertinent level diagram for $^{85}$Rb is shown in Figure~\ref{fig:400px-MOTimage005} (left).  Further detail on both isotopes of rubidium is available in Ref.~\cite{Steck}. The transition used for laser cooling drives atoms from the $F = 3$ ground state to the $F' = 4$ excited state of the D2 line. This transition is nominally closed, meaning that atoms will continue to scatter light through many absorption/emission cycles. However, rare off-resonant excitation to the $F' = \{2,3\}$ excited states does allow the atom to decay to the $F = 2$ ground state, where it is far-detuned from the cooling light and thus lost to the laser cooling process. To mend this problem, we introduce also light resonant with the $F = 2 \rightarrow F' = 3$ transition, which pumps atoms back to the laser cooled states.
 
 The $F = 3$ and $F' = 4$ levels each contain a number of magnetic sublevels. The strengths of transitions between them are related according to the Clebsch-Gordan coefficients (tabulated in Refs. \cite{Metcalf,Steck}). The strongest transition (lowest saturation intensity) occurs using circular polarized light driving the $|F = 3, m_F = 3\rangle \rightarrow |F' = 4, m_F = 4\rangle$ transition, with $ I_\text{sat} = 1.7$ mW/cm$^2$ \cite{Steck}. In estimating the fluorescence rate of atoms in a MOT, for the purpose of determining the number of trapped atoms, it is suggested that you account for the simultaneous excitation by the many laser beams of the MOT by averaging over all possible atomic ground states and laser polarizations.
 
-\textbf{Effects of the Zeeman shift on light scattering: How a MOT traps}
+\subsubsection {Effects of the Zeeman shift on light scattering: How a MOT traps}
 
 In the presence of a magnetic field, the energies of the ground and excited state sublevels are shifted by the linear Zeeman shift as $\Delta E = g_F\mu_Bm_FB$, where the Lande g-factors are $ g_F = 1/3$ in the ground state and $ g_F = 1/2$ in the excited state, $\mu_B = h \times 1.4$ MHz/G is the Bohr magneton, $ B$ is the magnetic field strength and the magnetic quantum number $ m_F$ is defined with the quantization axis along the magnetic field direction. These Zeeman shifts vary the atomic resonance frequencies, allowing the radiation pressure force in a MOT to be not only velocity dependent (giving cooling) but also position dependent (giving trapping).
 
