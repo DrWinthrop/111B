@@ -279,9 +279,7 @@ In this experiment, the optical frequency measurement is made using a method cal
 
 As shown in Fig.\ \ref{fig:OpticalSetup}, the ``spectroscopy setup'' includes two rubidium cells, which are both held at temperature a bit above room temperature.  One of them is held within a housing that includes also several permanent magnets -- that one is used to generate the DAVLL signal.  Two light beams pass through this DAVLL cell, after which they are detected on separate photodetectors.  A second cell is used to measure the rubidium spectrum at near-zero magnetic field.   One light beam passes through this cell and is detected.  Let us begin by explaining the signal that is detected in this second cell.
 
-If one slowly scans the frequency of the laser light over a broad range -- say 15 GHz or so -- and measures the intensity of light that is transmitted through the vapor cell, one obtains (that is, you will; see Sec.\ \ref{sec:generating_error_signal}) a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}.  We see that the light arriving at the detector is attenuated around four characteristic frequencies.  These correspond to the frequencies for optical transitions from the following ground hyperfine levels: the $F=2$ state of $^{87}$Rb, the $F=3$ state of  $^{85}$Rb, the $F=2$ state of  $^{85}$Rb, and the  $F=1$ state of  $^{87}$Rb, listed in order of increasing transition frequencies.
-
-Each of those transitions is \emph{Doppler broadened}.  We previously described the first order Doppler shift of the resonance frequency for an atom in motion (Sec.\ \ref{sec:dopplershift}).  Here, 
+If one slowly scans the frequency of the laser light over a broad range -- say 15 GHz or so -- and measures the intensity of light that is transmitted through the vapor cell, one obtains (that is, you will; see Sec.\ \ref{sec:generating_error_signal}) a signal such as shown in Fig.\ \ref{fig:400px-RbSpecMOT}.  We see that the light arriving at the detector is attenuated around four characteristic frequencies.  These correspond to the frequencies for optical transitions from the following ground hyperfine levels: the $F=2$ state of $^{87}$Rb, the $F=3$ state of  $^{85}$Rb, the $F=2$ state of  $^{85}$Rb, and the  $F=1$ state of  $^{87}$Rb, listed in order of increasing transition frequencies. Each of those transitions is \emph{Doppler broadened}.  We previously described the first order Doppler shift of the resonance frequency for an atom in motion (Sec.\ \ref{sec:dopplershift}).  
 
 The rubidium atoms in the vapor cell are moving according to the Maxwell-Boltzmann velocity distribution at a temperature of around 300 K (room temperature).  The Doppler broadened lines seen in Fig.\ \ref{fig:400px-RbSpecMOT} have line widths of several 100 MHz.  This is because even if we detune the probe light by several 100 MHz from the resonance frequency for an atom at rest, there are still atoms within the vapor cell that are moving at the right velocity relative to the wavevector of the light so that they see the light as being exactly on resonance in their center-of-mass frame.  Those atoms absorb light from the incident beam, and thereby attenuate the light beam passing through the vapor cell.
 
@@ -371,7 +369,7 @@ In working with this experiment, you must be mindful of a few hazards.
 \subsection{Standard Operating Procedures (SOP)}
 
 \begin{itemize}
-    \item Note you need 80 PSI water pressure. Look at the prssure meter on the south wall behind the computer and see that is at 80 PSI.  If it is not, see the staff immediately.
+    \item Note you need 80 PSI water pressure. Look at the pressure meter on the south wall behind the computer and see that is at 80 PSI.  If it is not, see the staff immediately.
 
     \item Before turning on the laser, examine the optical table for misplaced objects in the laser beam path. Refer to Figure~\ref{fig:OpticalSetup} for a reference diagram. You may want to print out a copy of this diagram. Once the path is clear, \textbf{put on a pair of the Laser Safety Goggles} and turn on the laser. Adjust the current to around 100 mA. Laser light emerges from a commercial diode laser (New Focus Stablewave) with linear polarization.
 
@@ -545,9 +543,9 @@ As you go through the optics and learn about what all the components do, you wil
 \subsubsection{Vacuum Chamber To Do}
 
 \begin{itemize}
-    \item Monitor the vacuum pressure using the ion gauge (located under the MOT optics table) and keep note of it during the experiment. Be sure you understand what the reading means. However, you should not need to adjust the pumping station – ask for help if you suspect something is wrong.
+    \item Monitor the vacuum pressure using the ion gauge (located under the MOT optics table) and keep note of it during the experiment. Be sure you understand what the reading means. However, you should not need to adjust the pumping station. Ask for help if you suspect something is wrong.
 
-    \item Calculate the magnitude of the field gradient (as defined in ) produced by a 1 A current running through the MOT coils. For this, note that the top MOT coil consists of three layers with 15 turns each, and that the MOT current runs \emph{in series} through these three layers; same for the bottom coil.
+    \item Calculate the magnitude of the field gradient produced by a 1 A current running through the MOT coils. For this, note that the top MOT coil consists of three layers with 15 turns each, and that the MOT current runs \emph{in series} through these three layers; same for the bottom coil.
 \end{itemize}
 
 \subsubsection{Rb Spectroscopy To Do}
@@ -587,7 +585,7 @@ PZT feedback branch:
 
     \item \textbf{POLARITY}: A switch changes the sign of the feedback.
 
-    \item \textbf{PZT RESISTOR}: A three-position dial varies the input resistor on the op-amp used for feedback.
+    \item \textbf{PZT RESISTOR}: A three-position switch varies the input resistor on the op-amp used for feedback.
 
     \item \textbf{PZT CAPACITOR}: A four-position dial varies the capacitor on the feedback branch of the op-amp.
 
@@ -789,7 +787,7 @@ The data acquisition for MOT utilizes two different programs, one of which contr
 
 \paragraph{The MOT VI}
 
-Note if a program error occurs usually it is the 1394 interface, 1st close VI program, then unplug the firewire cable at the rear of the computer and re-insert it. The VI outputs two TTL signals, which are both displayed in the feedback offset graph and a digital signal, which drives a relay, and ultimately, the magnet power supply. At present, these are output from the analog output ports and Port 0/Line 0 of the National Instruments card.
+Note: if a program error occurs, usually it is the 1394 interface. First close the VI program, then unplug the firewire cable at the rear of the computer and re-insert it. The VI outputs two TTL signals, which are both displayed in the feedback offset graph and a digital signal, which drives a relay, and ultimately, the magnet power supply. At present, these are output from the analog output ports and Port 0/Line 0 of the National Instruments card.
 
 The first TTL output signal is sent to the shutter driver, which reads the rising edge as ``close the shutter'' and the falling edge as ``open the shutter''. The ``step voltage'' defines the height of the pulse, and should between 2 and 5 Volts. The duration of this pulse is variable between 5 and $<200$ ms, you will find that pulse durations of less that 5 ms will likely cause the shutter to get stuck on occasion, and also that the real time separation between the closing and opening of the shutter is never less than around 8 ms, and is a little longer than the pulse duration set by the electronics.
 
@@ -812,7 +810,7 @@ Note: The ``snapshot'' function of the camera will fail if the computer is too b
 
 \paragraph{Using the MOT VI as a digital storage scope}
 
-If you choose, you can direct the output of PD3 to the AI0 analog input port of the DAQ card (WARNING: Be sure you know with what impedance the PD3 photodiode is terminated; see ). This output will be recorded synchronously with the pulse, and displayed in the ``Fluorescence (PD3)'' graph on the VI. The data can also be saved into a text file by pushing the ``Save PD3 Data'' button while the VI is pulsing. This is be helpful for recording the number of atoms in the MOT. If you prefer, you can use the digital storage scope to record PD3 instead, perhaps using the shutter TTL signal to trigger to scope.
+If you choose, you can direct the output of PD3 to the AI0 analog input port of the DAQ card (WARNING: Be sure you know with what impedance the PD3 photodiode is terminated). This output will be recorded synchronously with the pulse, and displayed in the ``Fluorescence (PD3)'' graph on the VI. The data can also be saved into a text file by pushing the ``Save PD3 Data'' button while the VI is pulsing. This is be helpful for recording the number of atoms in the MOT. If you prefer, you can use the digital storage scope to record PD3 instead, perhaps using the shutter TTL signal to trigger to scope.
 
 \textbf{Notes:}
 
