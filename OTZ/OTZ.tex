@@ -708,8 +708,8 @@ The average step sizes were:
 
 Using the Stage Control program provided within OTKBv7 (the MatLab GUI) we can find the speed for the different movements, given some set frequency. The speed can be determined by taking the distance per step (listed above) and multiplying by the frequency. This method was tested by Eric Parsonnet in June 2015, and was found to be correct.
 \begin{align*}
-    &\emph{left expected: } \left(\frac{\text{distance} = 37.04 \text{nm}}{\text{step}}\right)(\text{frequency} = 250)=\frac{9.26 \mu}{\text{sec}} \\
-    &\emph{left observed: } 9.709 \pm .700 \frac{\mu}{\text{sec}} \text{ (expected is within error)}
+    &\emph{left expected: } \left(\frac{\text{distance} = 37.04 \text{nm}}{\text{step}}\right)(\text{frequency} = \frac{250\text{ steps}}{\text{sec}})=\frac{9.26 \mu}{\text{sec}} \\
+    &\emph{left observed: } 9.709 \pm 0.700 \frac{\mu}{\text{sec}} \text{ (expected is within error)}
 \end{align*}
 The others were checked as well, but it is not necessary for me to include them here. Long story short, if you need speed, use the stage control program to ensure consistency, take the above distances/step and multiply by the frequency of your scan to get speed.
 
