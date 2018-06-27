@@ -8,7 +8,7 @@
 %\newcommand{\Fabry-Perot}{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/OCR\%20Burleigh\%20tech\%20memo\%20fabry\%20perots.pdf}
 %\newcommand{\Ch.10:Diffraction}{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Optics\%20Hecht\%20&\%20Zajac/Ch.\%2010\%20diffraction.pdf}
 %\newcommand{\AtomicSpectra\&AtomicStructure}{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/02-2ndEd-Atomic_Spectra_and_Atomic_Structure.pdf}
-%\newcommand{\Ch.18:HyperfineStructure}{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Introduction\%20to\%20Atomic\%20Harvey\%20E.\%20White/Ch.\%2018\%20hyperfine\%20structure_OCR.pdf}
+%\newcommand{\Ch.18:HyperfineStructure}{http://physics111.lib.berkeley.edu/Physics111/Reprints/ATM/Introduction\%20to\%20Atomic\%20Harvey\%20E.\%20White/Ch.\%2018\%20hyperfine\%20structure_OCR.pdf}https://www.sharelatex.com/project/5b294952a2365d2262d970d0
 %\newcommand{\AppendixI:ARCModelAM-505AtmosphericMonochromator}{http://experimentationlab.berkeley.edu/ATMAppendix1}
 %\newcommand{\PhotomulitiplierTubesCh.9}{http://physics111.lib.berkeley.edu/Physics111/Reprints/Knoll-Radiation\%20Detection\%20&\%20Measurement/01-Radiation_Detection_and_Measurement_CH_09.pdf}
 %\newcommand{\}{http://experimentationlab.berkeley.edu/sites/default/files/images/LLSimage019.gif}
@@ -20,6 +20,7 @@
 
 \tableofcontents
 
+\newpage
 \section{Atomic Physics Description (ATM)}
 
 \begin{enumerate}
@@ -288,6 +289,17 @@ It's time to get started. Pro-tip: check out the photos at the beginning of the 
 
 \begin{enumerate}
     \item Setting up the electronics: there should be a T with two BNCs hooked up to the PMT output. One BNC should take the signal to the scope. The signal sits on 120Hz line noise, so choose an appropriate time scale for the scope. The other heads to the DMM. The DMM needs to have a banana plug in the input (make sure the little notch goes into the LO input). A T should go into the banana plug, which allows you to hook up the PMT to one of the ports, and a little gadget with a resistor onto the other port (Why? It is because the PMT voltage is big and the DMM has a limit. Voltage divider makes sure that the output doesn't exceed the limit). Make sure that the little button labeled ``Terminals'' is extended (otherwise it displays the input from the back of the box). It should be set to read volts DC.
+    
+    Figure~\ref{fig:Monochromator}. 
+    \begin{figure}[h]
+        \centering
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/ATM/Monochromator.png}{\includegraphics[width=0.5\linewidth]{images/Monochromator.png}}
+        \caption{Block diagram of experimental setup for Balmer series}
+        \label{fig:Monochromator}
+    \end{figure}
+    
+    
+    
 
     \item Aligning the mercury lamp. Objective: get the lamp's light focused on the slit. First, make sure the opening in the lamp is aligned with the slit of the monochromator. There ought to be a lens attached to a rail, in between the lamp and the slit. By loosening the bottom screw, you can adjust its position on the rail. In order to gauge how well focused the light is, hold up a piece of paper close to the slit. By moving around the lamp, the light should change its focus on the paper. Try and line it up with the slit opening. You can also slide around the lens in order to obtain sharper focus. Use the thin lens equation to get a good idea of where to position the lens and the source with respect to the slit. The end result should be a well-focused slit of light, aligned with the slit of the monochromator.
     
@@ -397,12 +409,12 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
 \subsection{Apparatus}
 
 \begin{enumerate}
-    \item To observe the Zeeman effect we must put a light source in a magnetic field and observe the radiation with a spectrometer which will resolve the Zeeman lines. We are going to use a discharge tube, an ordinary electromagnet with iron pole pieces, a lens, a Fabry-Perot interferometer, and a digital camera, arranged in a configuration as shown in Figure~\ref{fig:ATMFig2}. 
+    \item To observe the Zeeman effect we must put a light source in a magnetic field and observe the radiation with a spectrometer which will resolve the Zeeman lines. We are going to use a discharge tube, an ordinary electromagnet with iron pole pieces, a lens, a Fabry-Perot interferometer, and a digital camera, arranged in a configuration as shown in Figure~\ref{fig:ATM-zeeman}. 
     \begin{figure}[h]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/ATM/ATM-zeeman.png}{\includegraphics[width=0.5\linewidth]{images/ATM-zeeman.png}}
-        \caption{Apparatus}
-        \label{fig:ATMFig2}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/ATM/ATM-zeeman_0_0.png}{\includegraphics[width=0.5\linewidth]{images/ATM-zeeman.png}}
+        \caption{Block diagram of experimental setup for Zeeman effect}
+        \label{fig:ATM-zeeman}
     \end{figure}
 
 	The lens is present merely to get light into the interferometer; it plays no part in resolving the spectrum lines. The interferometer forms fringes at infinity, as will be discussed below, and the camera is used to magnify and view these fringes. It is possible to dispense with the camera if you can focus your eyes at infinity but the fringes will look smaller and be harder to see.
@@ -474,7 +486,7 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
             \begin{enumerate}
                 \item Turn the magnet through 90 degrees, and look at the lamp through the hole in the pole piece. What is the effect of removing the polarizer?
             
-                \item \textbf{Setup the CCD Camera:} After you have the Zeeman apparatus set up, you can get an even better view of the fringes (and take some snapshots for your write-up) by using the zoom lens and video camera. Attach the camera to the FireWire cable and run FireView on the PC from the Desktop. Use the drop down menu to select the Ohcilynx card. A Prosilica Digital Camera node should appear. Select the Prosilica camera and click Connect. Click OK, then click on View and then Start Acquisition. The camera should now be showing images, though they may be dark. If you need to change the brightness of the image, click on Others --$>$ Live Control, and you may change the gain and exposure from here. Temporarily remove the filter, lens, polarizer, and interferometer and line the camera up on the window in the center of the electromagnet. Then put all of the other optics back in place and align each component vertically with the aid of the camera. Zoom out all the way and set the focus to infinity. You can use the micrometer adjustment knobs on the Fabry-Perot mount to center the fringes in the field of the camera.
+                \item \textbf{Setup the CCD Camera:} After you have the Zeeman apparatus set up, you can get an even better view of the fringes (and take some snapshots for your write-up) by using the zoom lens and video camera. Attach the camera to the FireWire cable and run FireView on the PC from the Desktop. Use the drop down menu to select the Ohcilynx card. A Prosilica Digital Camera node should appear. Select the Prosilica camera and click Connect. Click OK, then click on View and then Start Acquisition. The camera should now be showing images, though they may be dark. If you need to change the brightness of the image, click on Others --$>$ Live Control, and you may change the gain and exposure ("Shutter" on the program) from here. Temporarily remove the filter, lens, polarizer, and interferometer and line the camera up on the window in the center of the electromagnet. Then put all of the other optics back in place and align each component vertically with the aid of the camera. Zoom out all the way and set the focus to infinity. You can use the micrometer adjustment knobs on the Fabry-Perot mount to center the fringes in the field of the camera.
             
                 \begin{itemize}
                     \item To take a snapshot, select Disk --$>$ Save Bitmap, and choose an appropriate location.
@@ -493,13 +505,14 @@ Your goals for this lab are to see the Zeeman effect in action and to learn some
         \label{CapturedImage}
     \end{figure}
     
-    \item \textbf{Something more complex and interesting:} Use the spectrometer to see what lines are actually present in helium. Set up the system to use the prism spectrometer as a filter to isolate the red, yellow, and blue lines, and observe the splitting with the interferometer. The trick here is to focus the light from the lamp on the slit of the prism spectrometer and open the slit up all the way to let in as much light as possible. Then closing it down to see the yellow line in the center of the eyepiece. Ensure that the lens focuses a sharp line of light onto the slit. The optical equipment should already be aligned for this, just move the lens along the track until the line is sharp. When using the camera, try using the Live Control Settings: Auto-Exposure 0, Gain 8, Shutter 425, Brightness 90, camera focal length set to infinity and zoom set to 80. If you go to edit the live controls and they are not having an effect, try restarting the computer or adjusting the lamp voltage until the rings are brighter.
+    \item \textbf{Something more complex and interesting:} Use the spectrometer to see what lines are actually present in helium. Set up the system to use the prism spectrometer as a filter to isolate the red, yellow, and blue lines, and observe the splitting with the interferometer. The trick here is to focus the light from the lamp on the slit of the prism spectrometer and open the slit up all the way to let in as much light as possible. Then closing it down to see the yellow line in the center of the eyepiece. Ensure that the lens focuses a sharp line of light onto the slit. The optical equipment should already be aligned for this, just move the lens along the track until the line is sharp. When using the camera, try using the Live Control Settings: Auto-Exposure 0, Gain 15, Shutter 4095, Brightness 90, camera focal length set to infinity and zoom set to 80. If you go to edit the live controls and they are not having an effect, try restarting the computer or adjusting the lamp voltage until the rings are brighter. Covering the Fabry-perot interferometer and camera lens with a black cloth may also improve your resolution.
     
     \begin{figure}[H]
     \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/images/ATM_Zeeman_3489-Crop-Lg.jpg}{\includegraphics[width=0.8\linewidth]{images/ATM_Zeeman_3489-Crop-Lg.jpg}} \\
-        \caption{Setup Using the Prism Spectrometer}
-        \label{PrismSpectrometer}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/ATM/physical-zeeman-setup_0.jpg}{\includegraphics[width=0.4\linewidth]{images/physical-zeeman-setup_0.jpg}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/ATM/physical-setup-zeeman_covered_0.jpg}{\includegraphics[width=0.4\linewidth]{images/physical-setup-zeeman_covered_0.jpg}}
+        \caption{Setup Using the Prism Spectrometer. The left picture is with the Fabry-Perot interferometer uncovered, the right picture is with it covered by the black cloth}
+        \label{physical-zeeman-setup, physical-setup-zeeman_covered}
     \end{figure}
     
     Find the levels which give rise to the 587.56 nm lines of helium. Work out the Zeeman pattern thoroughly enough to show you understand the problems. You will need to check out the magnitudes of the triplet splittings. Use the spectrometer together with the interferometer to observe the Zeeman effect in this line, and compare to the calculated pattern. Why don't you see a clear pattern? Can you still see polarization effects? Originally Zeeman did not have enough resolution or magnetic field to see components clearly, but only slight polarization effects in the wings of the line.
