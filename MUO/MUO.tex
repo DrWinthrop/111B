@@ -40,15 +40,14 @@ You will get acquainted with a number of electronic devices that are quite commo
 \noindent\textbf{All pages in this lab. Note To print Full Lab Write-up click on each link below and print separately }
 
 \begin{enumerate}
-    \item \textbf{Muon Lifetime}
+    \item \textbf{Muon Lifetime (Current Page)}
     
     \item \href{http://experimentationlab.berkeley.edu/node/86}{\textbf{Exponential Probability Distributions}}
     
-    \item \href{http://experimentationlab.berkeley.edu/EAX}{\textbf{Error Analysis Notes}}
+    \item \href{http://experimentationlab.berkeley.edu/node/88}{\textbf{LabView Programs Controlling NI Digitizer}}
     
-    \item \href{http://experimentationlab.berkeley.edu/node/88}{\textbf{National Instruments Digitizer VI}}
+    \item \href{http://experimentationlab.berkeley.edu/EAX}{\textbf{Error Analysis Exercise}}    
     
-    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/DG645manual.pdf}{\textbf{Stanford Research Systems DG645}}
 \end{enumerate}
 
 Reprints and other information can be found on the \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MUO/MUO\_index.html}{\textbf{Physics 111 Library Site}}
@@ -62,7 +61,7 @@ Comments: \Feedback
 \begin{figure}[h]
 \begin{minipage}{0.24\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_3517.jpg}{\includegraphics[width=\linewidth,keepaspectratio]{images/MUO_3517.jpg}}
-    \caption{Front view of the lab station for the muon lifetime experiment. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_3517.jpg}{\textbf{here}}}
+    \caption{Front View of the lab station for the muon lifetime experiment. See larger image \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_3517.jpg}{\textbf{here}}}
 \end{minipage}
 \begin{minipage}{0.18\textwidth}
     \href{http://experimentationlab.berkeley.edu/sites/default/files/images/MUO_Pwr_3562.png}{\includegraphics[width=\linewidth,keepaspectratio]{images/MUO_Pwr_3562.png}}
@@ -85,7 +84,7 @@ Comments: \Feedback
 \signatures \hyperlink{Oscilloscope (TDS 360)}{ 1} \hyperlink{Apparatus in the other room}{ 2} \hyperlink{Trigger Rate}{ 3} \hyperlink{Time Difference Data}{ 4}
 
 \begin{enumerate}
-    \item \emph{\textbf{Note: In order to view the private Youtube videos hosted by the university, you must be signed into your berkeley.edu Google account.}} \\
+    \item \emph{\textbf{Note: In order to View the private Youtube videos hosted by the university, you must be signed into your berkeley.edu Google account.}} \\
     View the \href{http://youtu.be/uqH0qRIwBmg}{\textbf{Muon Lifetime Video}}.
 
     \item Last day of the experiment please fill out the \href{\ExperimentEvaluation}{\textbf{Experiment Evaluation}}
@@ -212,7 +211,7 @@ A photomultiplier tube (PMT) is a detector that converts single photons into lar
 
 \end{itemize}
 
-\noindent This Digitizer works together with a LabVIEW program that does two things: (1) it is an oscilloscope, (2) it is a differential detector logic system.
+\noindent This Digitizer works together with a LabView program that does two things: (1) it is an oscilloscope, (2) it is a differential detector logic system.
 
 \subsection{How the Experiment Works}
 
@@ -227,9 +226,9 @@ Muons are derived from the process of cosmic ray particles striking the nuclei o
     \label{fig:MUOimage008}
 \end{figure}
 
-When the two pulses come down the cable, they are routed to an amplifier. Then they go to the National Instruments Digitizer Card NI 5114. You configure triggering and timing properties of the digitizer in the LabVIEW programs. The LabVIEW program \textbf{Muon Detection Program} coupled to the digitizer card detects pulses from two photomultiplier tubes, measures their arrival times, amplitudes, and widths, and, for a subset of pulses that satisfy a preset criteria, writes the data to disk. You will read the data offline, filter it to reject noise, plot the time difference between two pulses in the same photomultiplier tube, and use the distribution to measure the muon lifetime.
+When the two pulses come down the cable, they are routed to an amplifier. Then they go to the National Instruments Digitizer Card NI 5114. You configure triggering and timing properties of the digitizer in the LabView programs. The LabView program \textbf{Muon Detection Program} coupled to the digitizer card detects pulses from two photomultiplier tubes, measures their arrival times, amplitudes, and widths, and, for a subset of pulses that satisfy a preset criteria, writes the data to disk. You will read the data offline, filter it to reject noise, plot the time difference between two pulses in the same photomultiplier tube, and use the distribution to measure the muon lifetime.
 
-\subsection{Explanation of the LabVIEW Programs}
+\subsection{Explanation of the LabView Programs}
 
 \href{http://experimentationlab.berkeley.edu/sites/default/files/Muon/Viewsignalsprogram.png}{\textbf{Screenshot of the View Signals Program}}
 
@@ -237,19 +236,19 @@ When the two pulses come down the cable, they are routed to an amplifier. Then t
 
 \newpage
 
-\checkpoint{Oscilloscope (TDS 360)}{Before you use these programs you should have viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabVIEW program as it will need to be specified when the data acquisition begins. The trigger level on the lab view program is initialized to some arbitrary voltage; however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic oscillations are simply noise and you are looking for very narrow sharp pulses following the initial large pulse. Show GSI your signals on the oscilloscope and discuss what values you think are appropriate for the LABView program.}
+\checkpoint{Oscilloscope (TDS 360)}{Before you use these programs you should have Viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabView program as it will need to be specified when the data acquisition begins. The trigger level on the lab View program is initialized to some arbitrary voltage; however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic oscillations are simply noise and you are looking for very narrow sharp pulses following the initial large pulse. Show a GSI your signals on the oscilloscope and discuss what values you think are appropriate for the LABView program.}
 
-%\textbf{This is a Checkpoint: Before you use these programs you should have viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabVIEW program as it will need to be specified when the data acquisition begins. The trigger level on the lab view program is initialized to some arbitrary voltage, however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic spread of oscillations are simply noise and you are looking for very narrow sharp peaks following the initial large decaying spike. Show  GSI your pulse signals on the oscilloscope and discuss what values you think are appropriate for the LABView program. }
+%\textbf{This is a Checkpoint: Before you use these programs you should have Viewed the signals with a real oscilloscope (TDS 360). What polarity are they, positive or negative? How wide, how high, etc. The TDS 360 will trigger depending upon the polarity of the signal, it is important to understand what polarity the signals are before moving on to the LabView program as it will need to be specified when the data acquisition begins. The trigger level on the lab View program is initialized to some arbitrary voltage, however this is not the correct voltage that is capable of reading both the peaks coming from the PMT and filtering out the low voltage noise. Therefore the purpose of hooking the signals up to the oscilloscope is to get a visual reading and estimate of the heights in voltage space and separation between the initial interaction peak and the decay peak in time (your brain and eyes make a great team in pattern recognition). Warning: You do not want to trigger on too low of a voltage, the erratic spread of oscillations are simply noise and you are looking for very narrow sharp peaks following the initial large decaying spike. Show  GSI your pulse signals on the oscilloscope and discuss what values you think are appropriate for the LABView program. }
 \begin{itemize}
     \item Note: High voltage on the PMTs are as follows: Top tube =1850 Volts Negative and bottom tube = 2200 Volts Negative. Output signals from the PMTs are connected to the SR445A 4 channel amplifier. It should be set up with x5 amplification for the top PMT (white cable) and x25 amplification for the bottom PMT (black cable).
 
 \end{itemize}
 
-This experiment uses two different LabVIEW programs: \textbf{View Signals} and \textbf{Muon Detection Program}. The purpose of \textbf{View Signals} is for you to choose the best input parameters by inspecting the signals and seeing how changes in the input parameters affect the signals and counting rates. (This reads the input signals like an oscilloscope). The optimal input parameters should then be used in the program \textbf{Muon Detection Program}, whose purpose is to save pulses to data files, from which you calculate the muon lifetime.
+This experiment uses two different LabView programs: \textbf{View Signals} and \textbf{Muon Detection Program}. The purpose of \textbf{View Signals} is for you to choose the best input parameters by inspecting the signals and seeing how changes in the input parameters affect the signals and counting rates. (This reads the input signals like an oscilloscope). The optimal input parameters should then be used in the program \textbf{Muon Detection Program}, whose purpose is to save pulses to data files, from which you calculate the muon lifetime.
 
 \newpage
 
-A high-speed digitizer installed in the back of the computer receives two signals. The digitizer represents the incoming analog signal by generating a series of numbers that describes the discrete samples. The top PMT is connected to Channel 0 of the digitizer, and the bottom PMT is read out by Channel 1. The digitizer is configured and initialized when you click \textbf{Start Acquisition} in either of the Muon LabVIEW programs and essentially a programmed way to interpret the incoming signal. However since the digitizers purpose is to represent the incoming signal and process the data you can change its configuration throughout the program. You can set the input range for each channel separately; 2 V is about right for both channels (the offset is set to 20\% of the range, so 2V corresponds to the range [$-$0.4V..+1.6V]). The input impedance is set to 50 ohms and the digitizer uses full bandwidth.
+A high-speed digitizer installed in the back of the computer receives two signals. The digitizer represents the incoming analog signal by generating a series of numbers that describes the discrete samples. The top PMT is connected to Channel 0 of the digitizer, and the bottom PMT is read out by Channel 1. The digitizer is configured and initialized when you click \textbf{Start Acquisition} in either of the Muon LabView programs and essentially a programmed way to interpret the incoming signal. However since the digitizer's purpose is to represent the incoming signal and process the data you can change its configuration throughout the program. You can set the input range for each channel separately; 2 V is about right for both channels (the offset is set to 20\% of the range, so 2V corresponds to the range [$-$0.4V..+1.6V]). The input impedance is set to 50 ohms and the digitizer uses full bandwidth.
 
 Here is a brief description of the different program controls (a more detailed explanation is given in the following section):
 
@@ -342,7 +341,7 @@ This parameter sets the amount of time that elapses before the program writes to
 
         \item Note the polarity, typical magnitude, and width of the pulses
 
-        \item Once you have all this information written down it will make optimizing the LabVIEW program a lot easier.
+        \item Once you have all this information written down it will make optimizing the LabView program a lot easier.
 
     \end{itemize}
 
@@ -352,7 +351,7 @@ This parameter sets the amount of time that elapses before the program writes to
 
 %\textbf{ This is a Checkpoint: Make sure you have seen the apparatus in the other room. Explain why the cable is terminated at the oscilloscope. }
 
-\subsection{Determine optimal settings using the LabVIEW program View Signals}
+\subsection{Determine optimal settings using the LabView program View Signals}
 
 \textbf{Program operation and description} \href{http://experimentationlab.berkeley.edu/node/88}{\textbf{National Instruments Digitizer VI}}
 
@@ -360,7 +359,7 @@ This parameter sets the amount of time that elapses before the program writes to
     \item Now use the LabView Program \textbf{View Signals} on the desktop.
 
     \begin{itemize}
-        \item If the pulses coming into the digitzer card are negative, \textbf{Flip Polarity} should be enabled.
+        \item If the pulses coming into the digitizer card are negative, \textbf{Flip Polarity} should be enabled.
 
         \item Estimate the average height of the primary and delayed pulses.
 
@@ -449,7 +448,7 @@ In experimental physics it is important to understand the electronics you work w
     \begin{itemize}
         \item First, reconfigure the internal trigger of the Delay Generator to 12.5kHz (this should be half the value used in the previous part). If the value is kept at 25kHz, a third pulse may be detected (why?).
 
-        \item Configure the CD output of the Delay Generator to send out a 100ns pulse some time after the AB pulse. Remember that you set the AB pulse to be sent 1 $\mu$s after the internal trigger, so setting the CD pulse to begin at 3 $\mu$s will correspond to a time difference of 2 $\mu$s between the pulses. Pick the amplitude and polarity to match that of pulse AB.
+        \item Configure the CD output of the Delay Generator to send out a 100 ns pulse some time after the AB pulse. Remember that you set the AB pulse to be sent 1 $\mu$s after the internal trigger, so setting the CD pulse to begin at 3 $\mu$s will correspond to a time difference of 2 $\mu$s between the pulses. Pick the amplitude and polarity to match that of pulse AB.
 
         \item Plug output AB into input 1 of the Power Splitter, and plug output CD into input 2 of the power splitter. Plug output S into the digitizer channel to be tested.
 
@@ -505,7 +504,7 @@ In experimental physics it is important to understand the electronics you work w
 
 \newpage
 
-This analysis can be done with a variety of tools, but we would recommend one of the more common packages designed for high-volume datasets. Thus, while it's possible to do a rudimentary version of the analysis in Excel, we do not recommend it, and we do not provide pre-packaged histograms of $dt$ for that reason. MATLAB is installed on the Advanced Lab computers, including the convenient Curve Fitting and Statistics add-on packages, as well as additional home-made fitting tools. Comprehensive tutorials for MATLAB are available at \href{http://experimentationlab.berkeley.edu/matlabintro}{\textbf{Intro to Matlab}} and elsewhere on the web (some useful functions are \texttt{hist()} and \texttt{histfit()} and it would be very wise to review the error analysis lab). If you want to use MATLAB outside the 111 lab, it is available for students at a discount at the University Store. There is also a GPL (free) clone \href{http://www.gnu.org/software/octave/}{\textbf{Octave}}, which is compatible with MATLAB at about 90\% level (that is, about 90\% of the commands are implemented, but the Curve Fitting package, regrettably, is not available). Octave can be downloaded for Windows, MacOS, and Linux.
+This analysis can be done with a variety of tools, but we would recommend one of the more common packages designed for high-volume datasets. Thus, while it's possible to do a rudimentary version of the analysis in Excel, we do not recommend it, and we do not provide pre-packaged histograms of $dt$ for that reason. MATLAB is installed on the Advanced Lab computers, including the convenient Curve Fitting and Statistics add-on packages, as well as additional home-made fitting tools. Comprehensive tutorials for MATLAB are available at \href{http://experimentationlab.berkeley.edu/matlabintro}{\textbf{Intro to Matlab}} and elsewhere on the web (some useful functions are \texttt{hist()} and \texttt{histfit()} and it would be very wise to review the error analysis lab). If you want to use MATLAB outside the 111 lab, you can get a free student license through the university's \href{https://software.berkeley.edu/matlab}{Software Central}. There is also a GPL (free) clone \href{http://www.gnu.org/software/octave/}{\textbf{Octave}}, which is compatible with MATLAB at about 90\% level (that is, about 90\% of the commands are implemented, but the Curve Fitting package, regrettably, is not available). Octave can be downloaded for Windows, MacOS, and Linux.
 
 The tool of choice for High Energy and Nuclear physics is \href{http://root.cern.ch}{\textbf{ROOT}}. It is a sophisticated data statistical analysis package, specifically designed for analyzing large data sets, curve fitting, etc. While MATLAB is best at linear algebra and signal processing, ROOT is most natural for reading a large data set, applying cuts, and performing non-linear fits. ROOT is available for free download from \href{https://root.cern.ch/drupal/content/downloading-root}{\textbf{CERN}}, and there is good documentation and tutorials on the \href{http://root.cern.ch}{\textbf{Root's main site}}. We also provide a sample (bare bones) analysis examples below: \href{http://experimentationlab.berkeley.edu/node/90}{\textbf{Muon Analysis in ROOT}}
 
@@ -557,6 +556,8 @@ A more detailed Monte Carlo analysis of your experiment is possible. For instanc
     \item National Instruments \href{http://experimentationlab.berkeley.edu/sites/default/files/pdfs/Daq-5124.pdf}{\textbf{Waveform 5124 Digitizer Manual.}}
 
     \item \href{http://physics111.lib.berkeley.edu/Physics111/Equipment\_Manuals/RCA\_PMT.pdf}{\textbf{RCA Photo Multiplier Tube Manual}}.
+    
+    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/DG645manual.pdf}{\textbf{Stanford Research Systems DG645}}
 
     \item B. Rossi, \href{http://physics111.lib.berkeley.edu/Physics111/Reprints/MUO/02-Cosmic-Ray\_Phenomena.pdf}{\textbf{Cosmic Rays}}, McGraw Hill (1964). \emph{History and background.}
 
