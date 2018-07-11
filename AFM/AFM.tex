@@ -818,6 +818,50 @@ If you want to change from the 15 Micron Scanner to the 50 Micron Scanner or vic
 
 \end{enumerate}
 
+
+\subsection{How to Prepare a Sample}
+\label{subsec:HowToPrepareASample}
+
+**If the samples that you are going to use are already prepared (they most likely will be), you can \hyperref[subsec:TipApproach]{skip to the next step}.
+
+\begin{enumerate}
+    \item The small sample to be imaged must be less than 8mm thick, and must be able to fit on the adhesive tab on the sample disk (15mm diameter).
+
+    \item The sample will be placed on the 15 mm metal disk
+
+    \item It is very important for the sample to be kept as clean as possible so avoid touching it with your fingers.  When there is contamination of the sample, capillary forces pull the contamination up the probe, and pull the cantilever down.
+
+    \item Use the provided double-sided adhesive tabs and tweezers.  Peel off one side of the adhesive protection backing and carefully attach it to the sample disk.  Next, peel off the other side, and use tweezers to place your small sample to be imaged firmly on the sticky tab.  Gently press the sample onto the sticky tab until secured.
+
+    \begin{itemize}
+        \item Make sure the area of interest is near the center of the disk
+
+        \item Be sure that the sample is as flat as possible and that it does not protrude off the edge of the disk
+
+        \item Alternatively, a small sample can also be glued to the sample disk using cyanoacrylate glue (superglue).
+    \end{itemize}
+
+\end{enumerate}
+
+\subsection{How to Load a Sample}
+\label{subsec:HowToLoadASample}
+
+Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_final\_0.mp4}{\textbf{Pre-Scan: Tune Frequency, Tip Approach, and Scanning}}
+
+\textbf{***BEFORE LOADING THE SAMPLE ONTO THE SAMPLE HOLDER, make sure that there is a large distance (at least 2 cms) between the probe and the sample holder.***}  You should turn the \textbf{Z Control} knob (located on top of the AFM near the camera tube) CLOCKWISE to raise the probe away from the sample holder.
+
+\begin{itemize}
+    \item Using the tweezers labeled ``Sample Use Only'', firmly grip the sample disk and place the prepared sample disk onto the sample holder then slide it into position.  Looking at the Camera Viewer, try to use the tweezers to move the area of the sample that you wish to scan as near as you can to the tip of the probe so you only need to make minor adjustments to the Stage's X and Y micrometers labeled S1 and S2.  Turning the S1 and S2 drastically in either direction will throw off the alignment preformed \hyperref[sec:Alignment]{here}.
+    
+    \item The metallic sample holder will magnetically attach to the stage, so be careful and aware when placing the disk on the stage, as to not damage anything.
+
+    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/3.0\%20Sample\%20Exchange\%28V1.0\%29.wmv}{\textbf{Basic Video Tutorial}}
+\end{itemize}
+
+
+
+
+
 \section{Alignment}
 \label{sec:Alignment}
 
@@ -940,6 +984,9 @@ In the AFM program in the\textbf{ Laser Align} section of the \textbf{PreScan} T
     \caption{Laser Alignment Tab}
 \end{figure}
 
+
+
+
 \section{AFM Calibration (Complete on 1st Day)}
 
 For your first scan, you will be taking a scan of the calibration slide so you can calibrate the AFM.
@@ -962,7 +1009,7 @@ Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_
     \item Insert Sample 7, labeled AppNano Silicon Step Height Reference, Part \# SHS-0.1-1
 
     \begin{itemize}
-        \item Refer to \hyperref[subsec:HowToLoadASample]{How to Load a Sample Section} located below.
+        \item Refer to \hyperref[subsec:HowToLoadASample]{How to Load a Sample Section} located above.
 
         \item Adjust the Camera Zoom to zoom out, so you can determine the orientation of the slide using the Camera Viewer.
     \end{itemize}
@@ -1145,9 +1192,9 @@ NOTE: Depending on the sample's reflectiveness, it may be more or less difficult
     
     \item Tip approach takes a few minutes from a tip to sample height of $\sim$1mm.  Completion time will depend on how close the tip is to the sample before tip approach.
     
-    \item\textbf{STOP!} After the automated tip approach has finished and the in feedback light is illuminated:
-    \begin{itemize}
-        \item To ensure that the tip is actually engaged with the sample, and is not in \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/VM\%204.2.\%20On\%20Cont-small\%20vib\_converted\_r1.mp4}{\textbf{False Feedback}} (where the system thinks it is engaged, but in reality it is not) locate the \textbf{Setpoint (mV) }value in the \textbf{Automated Tip Approach} section. Lower this value by increments of 10 and observe the yellow bar. You should not lower the setpoint more than 30 (lowering it by 10 three times). If the tip is engaged with the sample, the yellow bar will not move in position. If it begins to slowly drift noticeably upward, then unfortunately, the system is in false feedback. If you find the system is in false feedback, you must use the manual z motor control to move the tip up until it goes out of feedback and then re-do the tip approach. Before reinitiating tip approach, the yellow bar should be near 10 V in the Z Drive indicator, and the in feedback light should be off. After these criteria are met, click up on the manual z motor control 3 more times, \textbf{go to the system tab of the Software and lower ``extend factor'' in ``Tip Approach Parameters'' by .05,} then reinitiate a new automated tip approach. If you continuously go into false feedback on multiple tip approaches, then try clicking on the \textbf{Re-Center} button, which often fixes the issue. If you find that the tip is indeed engaged with the sample, you will now have one of three tasks, outlined below:
+    \item\textbf{STOP!} After the automated tip approach has finished and the in feedback light is illuminated. 
+    
+    To ensure that the tip is actually engaged with the sample, and is not in \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/VM\%204.2.\%20On\%20Cont-small\%20vib\_converted\_r1.mp4}{\textbf{False Feedback}} (where the system thinks it is engaged, but in reality it is not) locate the \textbf{Setpoint (mV) }value in the \textbf{Automated Tip Approach} section. Lower this value by increments of 10 and observe the yellow bar. You should not lower the setpoint more than 30 (lowering it by 10 three times). If the tip is engaged with the sample, the yellow bar will not move in position. If it begins to slowly drift noticeably upward, then unfortunately, the system is in false feedback. If you find the system is in false feedback, you must use the manual z motor control to move the tip up until it goes out of feedback and then re-do the tip approach. Before reinitiating tip approach, the yellow bar should be near 10 V in the Z Drive indicator, and the in feedback light should be off. After these criteria are met, click up on the manual z motor control 3 more times, \textbf{go to the system tab of the Software and lower ``extend factor'' in ``Tip Approach Parameters'' by .05,} then reinitiate a new automated tip approach. If you continuously go into false feedback on multiple tip approaches, then try clicking on the \textbf{Re-Center} button, which often fixes the issue. If you find that the tip is indeed engaged with the sample, you will now have one of three tasks, outlined below:
         \begin{enumerate}
             \item The yellow bar in the Z Drive indicator is centered at zero. If this is the case you are ready to begin your scan in the topo scan tab.
             
@@ -1155,7 +1202,6 @@ NOTE: Depending on the sample's reflectiveness, it may be more or less difficult
             
             \item The yellow bar in the Z Drive indicator is below zero. If this is the case, use the manual z motor control section to move the yellow bar up in the Z Drive indicator. You want the in feedback light off and the yellow bar near 10 V. Click up on the manual z motor control three more times. Reinitiate tip approach.
         \end{enumerate}
-    \end{itemize}
     
 \end{enumerate}
 
@@ -1171,6 +1217,7 @@ NOTE: Depending on the sample's reflectiveness, it may be more or less difficult
 
 \subsection{Topography Scanning}
 
+You are now ready to begin the calibration scan. 
     \begin{enumerate}
         \item Make sure you are in vibrating mode, and did a vibrating mode tip approach. \hyperref[subsec:SettingUpPreScanParametersForVibratingScan]{Click here for directions}.
         
@@ -1301,44 +1348,6 @@ NOTE: Depending on the sample's reflectiveness, it may be more or less difficult
 
 \textbf{Once you have performed a calibration you are ready to do the experiments.  After reading through the information and making sure you understand each procedure, jump ahead to the \hyperref[sec:Experiments]{Experiments} section}.
 
-\subsection{How to Prepare a Sample}
-\label{subsec:HowToPrepareASample}
-
-**If the samples that you are going to use are already prepared (they most likely will be), you can \hyperref[subsec:TipApproach]{skip to the next step}.
-
-\begin{enumerate}
-    \item The small sample to be imaged must be less than 8mm thick, and must be able to fit on the adhesive tab on the sample disk (15mm diameter).
-
-    \item The sample will be placed on the 15 mm metal disk
-
-    \item It is very important for the sample to be kept as clean as possible so avoid touching it with your fingers.  When there is contamination of the sample, capillary forces pull the contamination up the probe, and pull the cantilever down.
-
-    \item Use the provided double-sided adhesive tabs and tweezers.  Peel off one side of the adhesive protection backing and carefully attach it to the sample disk.  Next, peel off the other side, and use tweezers to place your small sample to be imaged firmly on the sticky tab.  Gently press the sample onto the sticky tab until secured.
-
-    \begin{itemize}
-        \item Make sure the area of interest is near the center of the disk
-
-        \item Be sure that the sample is as flat as possible and that it does not protrude off the edge of the disk
-
-        \item Alternatively, a small sample can also be glued to the sample disk using cyanoacrylate glue (superglue).
-    \end{itemize}
-
-\end{enumerate}
-
-\subsection{How to Load a Sample}
-\label{subsec:HowToLoadASample}
-
-Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_final\_0.mp4}{\textbf{Pre-Scan: Tune Frequency, Tip Approach, and Scanning}}
-
-\textbf{***BEFORE LOADING THE SAMPLE ONTO THE SAMPLE HOLDER, make sure that there is a large distance (at least 2 cms) between the probe and the sample holder.***}  You should turn the \textbf{Z Control} knob (located on top of the AFM near the camera tube) CLOCKWISE to raise the probe away from the sample holder.
-
-\begin{itemize}
-    \item Using the tweezers labeled ``Sample Use Only'', firmly grip the sample disk and place the prepared sample disk onto the sample holder then slide it into position.  Looking at the Camera Viewer, try to use the tweezers to move the area of the sample that you wish to scan as near as you can to the tip of the probe so you only need to make minor adjustments to the Stage's X and Y micrometers labeled S1 and S2.  Turning the S1 and S2 drastically in either direction will throw off the alignment preformed \hyperref[sec:Alignment]{here}.
-    
-    \item The metallic sample holder will magnetically attach to the stage, so be careful and aware when placing the disk on the stage, as to not damage anything.
-
-    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/3.0\%20Sample\%20Exchange\%28V1.0\%29.wmv}{\textbf{Basic Video Tutorial}}
-\end{itemize}
 
 
 
