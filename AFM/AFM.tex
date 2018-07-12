@@ -210,7 +210,7 @@ Comments: \Feedback
 
 In this lab, you will operate an atomic force microscope which is used to image 3D surfaces on the angstrom to micron level. AFM is relatively inexpensive and is used in many different fields of science including physics, chemistry, and biology.
 
-\textbf{What is an Atomic Force Microscope?}
+\subsection{What is an Atomic Force Microscope?}
 
 An atomic force microscope images objects on the scale of angstroms to microns through physical scanning, rather than optical methods (like conventional microscopes). The basic mechanism of the AFM is shown in Figure \ref{fig:BasicMechanism}. A tip attached to a cantilever interacts with a surface. Light from a laser is bounced off from the cantilever into a photodetector. From this signal, one measures the deflection of the cantilever. A sample is placed on a special stage underneath the tip. The stage contains a \hyperref[subsubsec:Piezo]{piezoelectric} driver that is controlled by software. In particular, it may be made to wiggle around in a raster scan pattern, as well as engage in feedback with the cantilever (constant-force mode). Variations in the height of the sample cause deflections of the cantilever, which are then picked up by the photodetector. Through this lab, you should gain a good understanding of how an AFM works, the types of data you can get from it, how you can use this data to make meaningful conclusions, and the limitations of the system.
 
@@ -295,7 +295,7 @@ When piezoelectric material is placed under mechanical stress, a shifting of the
 
 The piezoelectric effect is very useful within many applications that involve the production and detection of sound, generation of high voltages, electronic frequency generation, micro-balances, and ultra-fine focusing of optical assemblies. It is also the basis of a number of scientific instrumental techniques with atomic resolution, such as scanning probe microscopes (STM). The piezoelectric effect also has its use in more mundane applications as well, such as acting as the ignition source for cigarette lighters. 
 
-\textbf{Detector and Feedback Loop}
+\subsubsection{Detector and Feedback Loop}
 
 \begin{itemize}
     \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/2.1.\%20photodetector.flv\_converted.mp4}{\textbf{Here}} is an animation of how the detector outputs a voltage proportional to the surface topography of a sample.
@@ -333,11 +333,11 @@ The piezoelectric effect is very useful within many applications that involve th
 
 \end{itemize}
 
-\textbf{Mechanism}
+\subsubsection{Mechanism}
 
 The sample stage scans around in a raster pattern underneath the probe. When the probe encounters a surface feature (a bump or whatever), the cantilever bends. This changes the position of the laser beam at the photodetectors. The T-B signal is recorded by the software. In ``feedback mode,'' the T-B signal is an error signal applied to the sample stage's z-piezo. The feedback mechanism works to keep the deflection of the cantilever at a minimum. In this case, the feedback signal gives all of the information about the surface.
 
-\textbf{Ebox}
+\subsubsection{Ebox}
 
 The EBOX is located on the shelf behind the AFM. The EBOX houses the DAQ and connects/interfaces the AFM hardware with the software on the computer.
 
@@ -366,6 +366,18 @@ The software controls the AFM mechanisms and exports collected data as a .wsf fi
 
 Use this section as a reference when you calibrate the AFM and scan.
 
+
+
+
+\subsubsection{Prescan Tab} Where you select a mode (if vibrating mode, you will also find the resonant frequency), perform a \hyperref[RangeCheck]{range check}, and engage the \hyperref[subsec:TipApproach]{tip with the sample}.
+
+\begin{figure}[H]
+    \centering
+    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/prescantab.JPG}{\includegraphics[width=0.8\linewidth]{images/prescantab.JPG}}
+    \label{fig:prescantab}
+    \caption{Prescan Tab}
+\end{figure}
+
 \subsubsection{Tip Approach} 
     Later, after you load the sample, and adjust various parameters in the AFM program, you will lower the tip to the sample using the \hyperref[subsec:TipApproach]{Automated Tip Approach}.  When the Automated Tip Approach has lowered the tip all the way down to the surface, it will indicate that it is ``In Feedback.'' Here is an animation demonstrating \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/4.4.\%20feedback.flv\_converted.mp4}{\textbf{Feedback}}.
 
@@ -376,16 +388,8 @@ Use this section as a reference when you calibrate the AFM and scan.
     \caption{Automated Tip Approach Tab}
 \end{figure}
 
-\pagebreak
 
-\subsubsection{Prescan Tab} Where you select a mode (if vibrating mode, you will also find the resonant frequency), perform a \hyperref[RangeCheck]{range check}, and engage the \hyperref[subsec:TipApproach]{tip with the sample}.
 
-\begin{figure}[H]
-    \centering
-    \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/prescantab.JPG}{\includegraphics[width=0.8\linewidth]{images/prescantab.JPG}}
-    \label{fig:prescantab}
-    \caption{Prescan Tab}
-\end{figure}
 
 \subsubsection{Topo Scan Tab} \label{subsubsec:TopoScanTab} 
         Where you can adjust scan parameters like scan speed, scan size, what measurements you want to take (i.e. Z Drive will give basic topography, Z phase will give hardness, and Z error will map abrupt changes in topography). A screenshot of the tab is shown below:
@@ -555,7 +559,7 @@ As you follow along with the lab write up, you will find the following instructi
 
 These instructional videos are referenced in the procedures below.
 
-\subsection{Turn on instruments and open programs}
+\subsection{Turning on instruments and opening programs}
 \label{subsec:TurnOnInstrumentsAndOpenPrograms}
 
 For this section, refer to information in the instructional video  \href{http://experimentationlab.berkeley.edu/sites/default/files/gettingstarted\_final2.mp4}{\textbf{Getting Started and Probe Exchange}}
@@ -586,7 +590,7 @@ For this section, refer to information in the instructional video  \href{http://
     
     \begin{figure}[H]
         \centering
-        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/12.JPG}{\includegraphics[width=0.95\linewidth]{images/12.JPG}}
+        \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/12.JPG}{\includegraphics[width=0.75\linewidth]{images/12.JPG}}
         \caption{Grounding Plug}
     \end{figure}
 
@@ -797,21 +801,14 @@ Watching the video and following along will ultimately save you time.
 If you want to change from the 15 Micron Scanner to the 50 Micron Scanner or vice versa, then follow these steps. Each scanner is appropriately labeled.
 
 \begin{enumerate}
-    \item First, raise the tip at least cm away from the scanner to give yourself lots of room to work with.
+    \item First, raise the tip at least 2 cm away from the scanner to give yourself lots of room to work with.
 
     \item Remove the probe holder, and carefully set it aside.
 
-    \item Use the 3/16 Hex Wrench to loosen the 3 Hex Screws holding the scanner in place
+    \item Use the 3/16 Hex Wrench to loosen the 3 Hex Screws holding the scanner in place.
+    \textbf{DO NOT LOSE THESE SCREWS. KEEP THEM WITH THE SCANNER.}
 
-    \begin{itemize}
-        \item \textbf{DO NOT LOSE THESE SCREWS. KEEP THEM WITH THE SCANNER.}
-    \end{itemize}
-
-    \item CAREFULLY, unplug the ribbon cable from the back of the scanner
-
-    \begin{itemize}
-        \item Use caution when removing the cable \textbf{Grip the cable from the connector when removing to not damage the cable.}
-    \end{itemize}
+    \item CAREFULLY, unplug the ribbon cable from the back of the scanner. Use caution when removing the cable. \textbf{Grip the cable from the connector when removing to not damage the cable.}
 
     \item Set this scanner aside.
 
@@ -855,16 +852,17 @@ If you want to change from the 15 Micron Scanner to the 50 Micron Scanner or vic
 \subsection{How to Load a Sample}
 \label{subsec:HowToLoadASample}
 
-Watch \href{http://experimentationlab.berkeley.edu/sites/default/files/prescan\_final\_0.mp4}{\textbf{Pre-Scan: Tune Frequency, Tip Approach, and Scanning}}
 
 \textbf{***BEFORE LOADING THE SAMPLE ONTO THE SAMPLE HOLDER, make sure that there is a large distance (at least 2 cms) between the probe and the sample holder.***}  You should turn the \textbf{Z Control} knob (located on top of the AFM near the camera tube) CLOCKWISE to raise the probe away from the sample holder.
 
 \begin{itemize}
+    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/3.0\%20Sample\%20Exchange\%28V1.0\%29.wmv}{\textbf{Basic Video Tutorial}}
+    
     \item Using the tweezers labeled ``Sample Use Only'', firmly grip the sample disk and place the prepared sample disk onto the sample holder then slide it into position.  Looking at the Camera Viewer, try to use the tweezers to move the area of the sample that you wish to scan as near as you can to the tip of the probe so you only need to make minor adjustments to the Stage's X and Y micrometers labeled S1 and S2.  Turning the S1 and S2 drastically in either direction will throw off the alignment preformed \hyperref[sec:Alignment]{here}.
     
     \item The metallic sample holder will magnetically attach to the stage, so be careful and aware when placing the disk on the stage, as to not damage anything.
 
-    \item \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/3.0\%20Sample\%20Exchange\%28V1.0\%29.wmv}{\textbf{Basic Video Tutorial}}
+   
 \end{itemize}
 
 
@@ -1173,14 +1171,11 @@ NOTE: Depending on the sample's reflectiveness, it may be more or less difficult
     \item You can visually check the distance or use advanced methods.
     Advanced method mentioned in the \href{http://experimentationlab.berkeley.edu/sites/default/files/AFMImages/TT_AFM\%20User-Guide-V2.2-600DPI.pdf}{\textbf{TT-AFM user guide,}} pg. 25 section 4.5-4.5.1
     
-    \item Speed of motor is adjustable with the slider bar
-    \begin{itemize}
-        \item **It is advised that the slider bar be set all the way to the left at the slowest setting.  The indicator will read zero, but the motor will still move (should be able to hear the motors activate).
-    \end{itemize}
+    \item Speed of motor is adjustable with the slider bar. It is advised that the slider bar be set all the way to the left at the slowest setting.  The indicator will read zero, but the motor will still move (should be able to hear the motors activate).
     
     \item\textbf{Be conscious to not crash the tip into the sample using manual motor controls. This will \hyperref[subsec:BrokenTip]{damage or destroy the tip}.}
     
-    \item **If you feel comfortable with the instrument, having the tip closer to the sample before the automated tip approach will mean a shorter waiting time**
+    \item If you feel comfortable with the instrument, having the tip closer to the sample before the automated tip approach will mean a shorter waiting time.
     
     \begin{figure}[H]
         \centering
@@ -1189,13 +1184,13 @@ NOTE: Depending on the sample's reflectiveness, it may be more or less difficult
         \caption{Approximately how focused the probe should \\ be before starting an automated tip approach}
     \end{figure}
     
-    \item Ensure the that resonance frequency of the probe has already been selected. \textbf{Ensure the that the laser is on.} You may now initiate the automated tip approach
+    \item Ensure the that resonance frequency of the probe has already been selected. \textbf{Ensure the that the laser is on.} You may now initiate the automated tip approach.
     
-    \item Press the \textbf{Start} button in the \textbf{Automated Tip Approach }section to begin
+    \item Press the \textbf{Start} button in the \textbf{Automated Tip Approach }section to begin.
     
     \item Tip approach can be observed in the \textbf{Z Drive} indicator. You will notice the yellow indicator alternates between top and bottom as the tip approach commences.
     
-    \item The feedback indicator light will turn on when tip approach is complete
+    \item The feedback indicator light will turn on when tip approach is complete.
     
     \item If the feedback indicator light is flickering on and off, go to the \textbf{System }Tab, in the \textbf{Other Controls} section find the \textbf{Feedback Limit }value.  Increase this value by .01 and then check if the feedback indicator is still flickering.  If it is still flickering, repeat this step until it is the in feedback loop is consistently illuminated.
     
@@ -1230,7 +1225,7 @@ You are now ready to begin the calibration scan.
     \begin{enumerate}
         \item Make sure you are in vibrating mode, and did a vibrating mode tip approach. \hyperref[subsec:SettingUpPreScanParametersForVibratingScan]{Click here for directions}.
         
-        \item Click the \textbf{Topo Scan} tab
+        \item Click the \textbf{Topo Scan} tab.
         
         \item Set parameters and settings to match those in the screenshot below. You may play around with these settings to see how the scan quality changes, or use your own prefered settings. Make sure to record the settings used for your own reference.
         \begin{itemize}
@@ -1244,11 +1239,11 @@ You are now ready to begin the calibration scan.
             \label{fig:TopoScanSettings}
         \end{figure}
         
-        \item Begin a scan by clicking the \textbf{Start} button in the \textbf{Scan} window
+        \item Begin a scan by clicking the \textbf{Start} button in the \textbf{Scan} window. 
         \begin{itemize}
-            \item The probe will move into position and the scan will begin
+            \item The probe will move into position and the scan will begin.
             
-            \item Captured data is displayed in the graphs above
+            \item Captured data is displayed in the graphs above.
             
             \item Progress of the scan is displayed in the counter next to \textbf{Scan Lines} in the \textbf{Scan Setup} window
         \end{itemize}
@@ -1289,7 +1284,7 @@ You are now ready to begin the calibration scan.
 
 %\textbf{Checkpoint. With the camera, show the staff the alignment of the laser on the cantilever, as well as the alignment of the sample stage. Show the staff the alignment of the detector as well. Show the staff your resonance data, as well as the peak you have chosen. Show the staff your image. Identify any debris or dirt.}
 
-\subsection{Data analysis portion}
+\subsection{Calibration Data Analysis}
 \label{subsec: DataAnalysisPortion}
 
 \begin{enumerate}
@@ -1385,7 +1380,7 @@ You are now ready to begin the calibration scan.
 
 
 
-\section{Data Processing and Analysis}
+\section{Data Processing}
 \label{sec:DataProcessingAndAnalysis}
 
 AFM images are a 3D array of numbers which represent the surface of the sample.  There are 3 types of functions for this data:
